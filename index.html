@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>熊本・別府冬日自駕終極整合手冊 v22_final</title>
-    <!-- 引入 Tailwind CSS 提供現代化快速排版 -->
+    <title>熊本・別府冬日自駕終極整合手冊 v26_final</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts 引入優雅的日文字型風格 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght=400;700&family=Noto+Sans+TC:wght=300;400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -26,13 +24,11 @@
 </head>
 <body class="p-3 md:p-8">
 
-    <!-- Header Hero Section -->
     <header class="max-w-5xl mx-auto text-center my-4 p-6 washi-card rounded-xl border-t-4 border-amber-700">
         <span class="text-amber-800 font-bold tracking-widest text-xs bg-amber-100 px-3 py-1 rounded-full">5大3小家族溫泉自駕6天5夜隨身攜帶手冊</span>
         <h1 class="serif-title text-2xl md:text-4xl font-bold mt-3 text-stone-800 tracking-tight">熊本・別府冬日自駕終極整合手冊</h1>
         <p class="text-stone-500 mt-2 font-mono text-xs">📅 行程週期：1/31 (週日) - 2/5 (週五)</p>
         
-        <!-- 快速Memo -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 text-sm text-left">
             <div class="bg-blue-50 p-3 rounded border border-blue-200">
                 <span class="font-bold text-blue-800">❄️ 車輛與冬季雪胎</span>
@@ -44,18 +40,15 @@
             </div>
             <div class="bg-emerald-50 p-3 rounded border border-emerald-200">
                 <span class="font-bold text-emerald-800">💳 ETC 實體卡租借</span>
-                <p class="text-xs text-stone-600 mt-1">現場租借實體 ETC 卡（每台車 330 日圓/張），還車時依實際感應次數刷卡結清（全趟過路費預估約 7,000 日圓/車）。</p>
+                <p class="text-xs text-stone-600 mt-1">現場租借實體 ETC 卡（330日圓/張），還車時依實際感應次數刷卡結清（全趟過路費預估約 7,000 日圓/車）。</p>
             </div>
         </div>
     </header>
 
-    <!-- Main Grid Layout -->
     <main class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
         
-        <!-- 左側欄位：基本資訊與美食、清單 -->
         <div class="space-y-6 lg:col-span-1">
             
-            <!-- 家族與航班資訊 -->
             <section class="washi-card p-5 rounded-xl">
                 <h2 class="serif-title font-bold text-lg text-stone-800 border-b pb-2 mb-3 border-stone-300">✈️ 航班與家族成員</h2>
                 <div class="text-xs text-stone-600 mb-3 bg-stone-100 p-2 rounded font-medium">
@@ -84,16 +77,14 @@
                 </div>
             </section>
 
-            <!-- 互動：口袋美食大補帖 -->
             <section class="washi-card p-5 rounded-xl border-l-4 border-amber-600">
                 <h2 class="serif-title font-bold text-lg text-stone-800 border-b pb-2 mb-2 border-stone-300">🍡 口袋美食大補帖</h2>
-                <div class="space-y-3 text-xs max-h-[320px] overflow-y-auto pr-1">
+                <div class="space-y-3 text-xs max-h-[260px] overflow-y-auto pr-1">
                     <div>
                         <h4 class="font-bold text-amber-900 bg-amber-50 px-2 py-0.5 rounded mb-1.5">熊本市區大本營 (Day 2 & Day 6)</h4>
                         <label class="flex items-start gap-2 mb-2 text-stone-600"><input type="checkbox" class="rounded text-amber-700 focus:ring-amber-500 mt-0.5"> <span>海膽可樂餅 (櫻之馬場城彩苑)：外酥內軟爆漿海味！</span></label>
                         <label class="flex items-start gap-2 mb-2 text-stone-600"><input type="checkbox" class="rounded text-amber-700 focus:ring-amber-500 mt-0.5"> <span>陣太鼓冰淇淋 (櫻之馬場城彩苑)：香草霜淇淋完美融入紅豆年糕！</span></label>
                         <label class="flex items-start gap-2 mb-2 text-stone-600"><input type="checkbox" class="rounded text-amber-700 focus:ring-amber-500 mt-0.5"> <span>黑糖多圈圈棒 (熊本車站肥後よかもん市場)：香甜酥脆，極配黑咖啡！</span></label>
-                        <label class="flex items-start gap-2 mb-2 text-stone-600"><input type="checkbox" class="rounded text-amber-700 focus:ring-amber-500 mt-0.5"> <span>體力補給零食、車上解饞小餅乾</span></label>
                     </div>
                     <div>
                         <h4 class="font-bold text-stone-800 bg-stone-200 px-2 py-0.5 rounded mb-1.5">別府・由布院秘境 (Day 4)</h4>
@@ -104,7 +95,6 @@
                 </div>
             </section>
 
-            <!-- 行程清單 -->
             <section class="washi-card p-5 rounded-xl">
                 <div class="flex justify-between items-center border-b pb-2 mb-3 border-stone-300">
                     <h2 class="serif-title font-bold text-lg text-stone-800">🧳 旅行用攜帶物品清單</h2>
@@ -112,7 +102,7 @@
                 <div class="w-full bg-stone-200 rounded-full h-1.5 mb-4">
                     <div id="packing-bar" class="bg-amber-700 h-1.5 rounded-full" style="width: 0%"></div>
                 </div>
-                <div class="space-y-4 text-xs max-h-[320px] overflow-y-auto pr-1">
+                <div class="space-y-4 text-xs max-h-[280px] overflow-y-auto pr-1">
                     <div>
                         <h3 class="font-bold text-stone-700 mb-1.5 bg-stone-200 px-2 py-0.5 rounded">🔴 重要證件、文件 & 現金</h3>
                         <label class="flex items-start gap-2 mb-1"><input type="checkbox" class="pack-item mt-0.5 rounded text-amber-700"> <span>護照正本 (確認效期6個月以上)</span></label>
@@ -132,7 +122,6 @@
                         <h3 class="font-bold text-red-800 mb-1.5 bg-red-50 px-2 py-0.5 rounded">👶 寶貝專區 (彎彎、肉肉、妞妞)</h3>
                         <label class="flex items-start gap-2 mb-1"><input type="checkbox" class="pack-item mt-0.5 rounded text-amber-700"> <span>兒童隨身小背包、保溫水壺</span></label>
                         <label class="flex items-start gap-2 mb-1"><input type="checkbox" class="pack-item mt-0.5 rounded text-amber-700"> <span>乾/濕紙巾、備用換洗衣物一套</span></label>
-                        <label class="flex items-start gap-2 mb-1"><input type="checkbox" class="pack-item mt-0.5 rounded text-amber-700"> <span>體力補給零食、車上解饞小餅乾</span></label>
                     </div>
                     <div>
                         <h3 class="font-bold text-stone-700 mb-1.5 bg-stone-200 px-2 py-0.5 rounded">🔌 電子、藥品 & 隨身雜物</h3>
@@ -147,25 +136,23 @@
             </section>
         </div>
 
-        <!-- 右側欄位：主行程區 (Tabs 切換) -->
         <div class="space-y-6 lg:col-span-2">
-            <!-- 頁籤按鈕 -->
             <div class="flex flex-wrap gap-1 bg-stone-200 p-1 rounded-xl">
-                <button onclick="switchDay(1)" id="tab-btn-1" class="day-tab flex-1 min-w-[60px] text-center py-2 rounded-lg font-bold text-xs bg-amber-800 text-white transition-all">D1</button>
-                <button onclick="switchDay(2)" id="tab-btn-2" class="day-tab flex-1 min-w-[60px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all">D2</button>
-                <button onclick="switchDay(3)" id="tab-btn-3" class="day-tab flex-1 min-w-[60px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all">D3</button>
-                <button onclick="switchDay(4)" id="tab-btn-4" class="day-tab flex-1 min-w-[60px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all">D4</button>
-                <button onclick="switchDay(5)" id="tab-btn-5" class="day-tab flex-1 min-w-[60px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all">D5</button>
-                <button onclick="switchDay(6)" id="tab-btn-6" class="day-tab flex-1 min-w-[60px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all">D6</button>
+                <button onclick="switchDay(1)" id="tab-btn-1" class="day-tab flex-1 min-w-[50px] text-center py-2 rounded-lg font-bold text-xs bg-amber-800 text-white transition-all">D1</button>
+                <button onclick="switchDay(2)" id="tab-btn-2" class="day-tab flex-1 min-w-[50px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all">D2</button>
+                <button onclick="switchDay(3)" id="tab-btn-3" class="day-tab flex-1 min-w-[50px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all">D3</button>
+                <button onclick="switchDay(4)" id="tab-btn-4" class="day-tab flex-1 min-w-[50px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all">D4</button>
+                <button onclick="switchDay(5)" id="tab-btn-5" class="day-tab flex-1 min-w-[50px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all">D5</button>
+                <button onclick="switchDay(6)" id="tab-btn-6" class="day-tab flex-1 min-w-[50px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all">D6</button>
+                <button onclick="switchDay(7)" id="tab-btn-7" class="day-tab flex-1 min-w-[80px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all text-amber-900 flex items-center justify-center gap-1">🛍️血拼</button>
             </div>
 
-            <!-- DAY 1 -->
             <div id="day-content-1" class="day-content space-y-4">
                 <div class="washi-card p-5 rounded-xl border-l-4 border-amber-800">
                     <div class="flex justify-between items-start border-b pb-2 mb-4 border-stone-200">
                         <div>
-                            <h2 class="serif-title font-bold text-xl text-stone-800">Day 1 - 1/31 (週日) 台北 ➔ 熊本機場 ➔ 熊本新町包棟基地</h2>
-                            <p class="text-xs text-stone-500 mt-1">🏠 住宿：Oneness House Kumamoto 熊本新町（一棟貸獨棟別墅，大行李免搬動，空間寬敞）</p>
+                            <h2 class="serif-title font-bold text-xl text-stone-800">Day 1 - 1/31 (週日) 台北 ➔ 熊本機場 ➔ SUMITSUGU HOUSE Station</h2>
+                            <p class="text-xs text-stone-500 mt-1">🏠 住宿：SUMITSUGU HOUSE Station (スミツグハウスステーション) 質感老屋基地</p>
                         </div>
                         <span class="text-xs font-bold bg-amber-100 text-amber-800 px-2 py-1 rounded">1/31 (週日)</span>
                     </div>
@@ -177,7 +164,7 @@
                             <p class="text-xs text-stone-600 mt-1">班機降落熊本機場，全員通關。</p>
                             <div class="mt-2 bg-red-50 p-3 rounded-r-lg border border-dashed border-red-200 border-l-4 border-l-red-600 text-xs text-stone-700 leading-relaxed shadow-sm">
                                 <span class="font-bold text-red-800 block mb-1">🚨 全員光速通關最高機密備忘：</span>
-                                為了入境順利、不被卡在人海中，請全家人在「飛機準備降落前，先在機艙內上好廁所」！下飛機後請沿著動線，二話不說「直直、大步地往入境海關櫃檯走去」！絕對不要停下來上沿途的廁所，以免海關瞬間大排長龍卡死，也能防範行李在轉盤上太久被別人誤拿。等順利通關、來到行李轉盤等行李的空檔時，大家再去上廁走唷！
+                                為了入境順利、不被卡在人海中，請全家人在「飛機準備降落前，先在機艙內上好廁所」！下飛機後請沿著動線，二話不說「直直、大步地往入境海關櫃檯走去」！絕對不要停下來上沿途的廁所，以免海關瞬間大排長龍卡死，也能防範行李在轉盤上太久被別人誤拿。等順利通關、來到行李轉盤等行李的空檔時，大家再去上廁所唷！
                             </div>
                         </div>
 
@@ -188,56 +175,52 @@
                                 <h3 class="font-bold text-sm">辦理取車手續</h3>
                                 <a href="map.jpg" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline">🗺️ 熊本機場租車動線連結</a>
                             </div>
-                            <p class="text-xs text-stone-600 mt-1">抵達客運大樓大廳，沿動線前往租車櫃檯辦理取車手續。租車櫃檯、接駁服務處與專用車道全區動線指引圖。</p>
+                            <p class="text-xs text-stone-600 mt-1">抵達客運大樓大廳，沿動線前往租車櫃檯辦理取車手續。</p>
                             <p class="text-xs text-red-600 font-medium bg-red-50 p-2 rounded mt-1 border border-red-100">⚠️ 租車現場提示：明確告知店員 "No KEP, just ETC card please." 租借 ETC 卡即可。</p>
                             
-                            <!-- 補回第一天機場租車動線圖片 (map.jpg) -->
                             <div class="mt-3 bg-white p-2 rounded-xl border border-stone-200 shadow-sm max-w-xl mx-auto">
                                 <img src="map.jpg" class="w-full h-auto rounded-lg" alt="熊本機場租車櫃台地圖">
-                                <p class="text-[11px] text-stone-500 text-center mt-1.5 font-mono">📍 map.jpg: 熊本機場客運大樓→租車櫃檯、接駁服務處與專用車道全區動線指引圖</p>
+                                <p class="text-[11px] text-stone-500 text-center mt-1.5 font-mono">📍 map.jpg: 租車櫃檯、接駁服務處與專用車道全區動線指引圖</p>
                             </div>
                         </div>
 
                         <div class="relative">
                             <div class="absolute -left-[22px] top-1 bg-amber-800 w-3 h-3 rounded-full"></div>
-                            <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">19:30 - 20:00</span>
-                            <h3 class="font-bold text-sm mt-1">驅車直奔市區民宿</h3>
-                            <p class="text-xs text-stone-600 mt-1">【平地大馬路，車程約 40-50 分鐘】安全極佳，直奔熊本市區。</p>
+                            <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">19:30 - 20:15</span>
+                            <h3 class="font-bold text-sm mt-1">驅車直奔熊本車站商圈</h3>
+                            <p class="text-xs text-stone-600 mt-1">【平地大馬路，車程約 40-45 分鐘】安全極佳，直奔熊本車站商圈。</p>
                         </div>
 
-                        <!-- 🏡 新町包棟別墅詳細資料卡 -->
                         <div class="relative bg-stone-100 p-4 rounded-xl border border-stone-300 text-xs space-y-2">
-                            <h3 class="font-bold text-stone-800 text-sm border-b pb-1">🏡 住宿明細：Oneness House Kumamoto 熊本新町</h3>
-                            <p><strong>📍 地址導航：</strong> 熊本市中央區新町4-8-16 (離市電新町站/巴士站步行僅 4 分鐘)</p>
+                            <h3 class="font-bold text-amber-900 text-sm border-b pb-1">🏡 新換獨棟別墅：SUMITSUGU HOUSE Station</h3>
+                            <p class="text-stone-500 text-[11px]">極具美感的日式古民家改建獨棟別墅！包棟不擔心吵到鄰居，全家極具家庭大團圓感。</p>
+                            <p><strong>📍 地址導航：</strong> 熊本市西區春日商圈（鄰近熊本車站，下機拉車路線超單純直覺）</p>
                             <div class="flex flex-wrap gap-2 my-1 items-center">
-                                <button onclick="copyMapCode('29 488 206*11')" class="bg-amber-700 text-white px-2 py-0.5 rounded hover:bg-amber-800 font-mono text-xs">📋 車機 MC: 29 488 206*11</button>
-                                <a href="https://maps.app.goo.gl/AohA7SmXKrmihA8o7" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline">🗺️ Google地圖導航</a>
-                                <span class="bg-stone-200 px-2 py-0.5 rounded font-mono text-xs">📞 撥號：090-3413-4315</span>
+                                <button onclick="copyMapCode('29427 123*44')" class="bg-amber-700 text-white px-2 py-0.5 rounded hover:bg-amber-800 font-mono text-xs">📋 車機 MC: 29427 123*44</button>
+                                <a href="https://maps.app.goo.gl/gjX6LYqwYorwEr9j7" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline">🗺️ Google地圖導航</a>
+                                <span class="bg-stone-200 px-2 py-0.5 rounded text-stone-600">📞 聯繫窗口：請參閱房東房訊通知</span>
                             </div>
-                            <p><strong>🚗 自駕車位：</strong> 民宿敷地內免費提供 1 台專屬車位。第二台車請停放至轉角處<strong>【タイムズ新町第3】</strong>停車場（24小時最高上限 770 日圓，下行李散步 1 分鐘即達）。</p>
-                            <p><strong>🚿 衛浴優勢：</strong> 民宿 1 樓與 2 樓各有一套完整浴室與獨立馬桶（共 2 浴室 + 2 馬桶），全員洗漱完全免排隊搶廁所。</p>
+                            <p><strong>🚗 自駕車位與對策：</strong> 已確認雙車停車對策。第一台車停民宿指定位，第二台車請停放至周邊平面 Coin Parking，下行李方便。</p>
+                            <p class="text-amber-800 bg-amber-50 p-2 rounded border border-amber-200 font-medium"><strong>🚿 衛浴重要叮嚀：</strong> 老屋改建為珍貴的單一寬敞衛浴結構，5大3小晚上洗漱與早晨上廁所，請發揮高效率排好接力賽順序，即可優雅過關！</p>
                         </div>
 
                         <div class="relative">
                             <div class="absolute -left-[22px] top-1 bg-amber-800 w-3 h-3 rounded-full"></div>
-                            <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">晚上活動 & 任務</span>
-                            <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
-                                <h3 class="font-bold text-sm">Foodway 超市大採購</h3>
-                                <a href="https://maps.app.goo.gl/HsQHTuXdkjny2QPc7" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline">🗺️ Foodway 超市地圖導航</a>
-                            </div>
-                            <p class="text-xs text-stone-600 mt-1">抵達民宿放好行李，全員直奔市區 **Foodway 超市 熊本サクラマチ店** 買齊隔天早餐（日本大草莓、鮮奶、吐司小蛋糕）。大人推薦採購溏心蛋、無糖優格與黑咖啡，快速補充優質高蛋白與晨間提神！利用 2 樓廚房與大桌聊天吃宵夜最溫馨。</p>
+                            <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">晚上活動 & 黃金採買任務</span>
+                            <h3 class="font-bold text-sm mt-1 text-emerald-950">【無敵便利！熊本車站黃金採買動線】</h3>
+                            <p class="text-xs text-stone-600 mt-1">停好車後，全家直接散步前往<strong>【熊本車站1F肥後よかもん市場】</strong>或<strong>【AMU PLAZA 熊本地下生鮮超市】</strong>！</p>
+                            <p class="text-xs text-stone-600 mt-1">在這裡可以一站式光速買齊這兩天早晨所需的日本大草莓、阿蘇鮮奶/優格、溏心蛋以及黑咖啡。買完帶回老屋客廳大桌分食宵夜，體驗最道地的日式生活。</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- DAY 2 -->
             <div id="day-content-2" class="day-content space-y-4 hidden">
                 <div class="washi-card p-5 rounded-xl border-l-4 border-amber-800">
                     <div class="flex justify-between items-start border-b pb-2 mb-4 border-stone-200">
                         <div>
                             <h2 class="serif-title font-bold text-xl text-stone-800">Day 2 - 2/1 (週一) 熊本市區慢活一日遊（看準時間找熊本熊部長）</h2>
-                            <p class="text-sm text-stone-500 mt-1">🏠 住宿：Oneness House Kumamoto 熊本新町（續住第 2 晚）</p>
+                            <p class="text-sm text-stone-500 mt-1">🏠 住宿：SUMITSUGU HOUSE Station 質感老屋基地（續住第 2 晚）</p>
                         </div>
                         <span class="text-xs font-bold bg-amber-100 text-amber-800 px-2 py-1 rounded">2/1 (週一)</span>
                     </div>
@@ -246,13 +229,12 @@
                         <div class="relative">
                             <div class="absolute -left-[22px] top-1 bg-amber-800 w-3 h-3 rounded-full"></div>
                             <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">08:30 - 09:30</span>
-                            <p class="text-xs text-stone-600 mt-1">民宿內悠閒享用昨晚大採購的超商/超市美味早餐。得益於雙衛浴配置，梳洗輕鬆優雅。</p>
+                            <p class="text-xs text-stone-600 mt-1">在氣氛絕佳的 SUMITSUGU 老屋客廳內，悠閒享用昨晚在車站超市大採購的美味早餐。依序梳洗完畢準備出發。</p>
                             <p class="text-xs text-blue-700 font-medium bg-blue-50 p-2 rounded my-1 border border-blue-100">
-                                🚗 09:30-10:00 出發開車僅需 4-5 分鐘抵達熊本城專用停車場（新基地離城極近，拉車時間超短）。
+                                🚗 09:30-10:00 出發開車大約 10-12 分鐘即可輕鬆抵達熊本城專用停車場（市區路況平穩好開）。
                             </p>
                         </div>
 
-                        <!-- 熊本城指定停車與門票卡 -->
                         <div class="relative bg-stone-50 p-3 rounded-lg border border-stone-200 text-xs space-y-2">
                             <h3 class="font-bold text-stone-800 text-sm">🏯 10:00 - 12:00 參觀【熊本城】與【熊本城稻荷神社】</h3>
                             <p class="text-stone-600">天守閣內部設有現代化電梯，長輩與小孩免操勞。</p>
@@ -297,7 +279,12 @@
                                 <h3 class="font-bold text-sm">【下通商店街/櫻町熊本/鶴屋百貨】血拼與追星</h3>
                                 <a href="https://maps.app.goo.gl/eZhEZbyWELb6Dr8f6" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline">🗺️ 萬代巨大扭蛋店導航</a>
                             </div>
-                            <p class="text-stone-600 mt-1">・追星指南：朝盛官方巨大扭蛋店、藥妝店，並前往鶴屋百貨東館 1 樓的「熊本熊部長辦公室」。</p>
+                            
+                            <div class="my-2 bg-purple-50 p-3 rounded-xl border border-purple-200 text-stone-700 leading-relaxed shadow-sm">
+                                <span class="font-bold text-purple-900 block mb-1">🛍️ 潮流敗家熱點 (名牌專櫃狙擊)：</span>
+                                鶴屋百貨本館內有**三宅一生 (ISSEY MIYAKE)** 專櫃！1 樓可直奔超人氣 **BAO BAO** 挑選經典幾何方塊包；3 樓則是經典褶皺 **PLEATS PLEASE** 與 **me** 的服飾大本營（買完記得一併去東館 2 樓辦理退稅手續）。
+                            </div>
+                            <p class="text-stone-600 mt-1">・追星指南：逛完專櫃，直接前往鶴屋百貨東館 1 樓的**「熊本熊部長辦公室」**朝盛！</p>
                             <p class="text-red-600 font-medium bg-red-50 p-2 rounded mt-1 border border-red-100">🚨 特別提醒：出發前務必上官網核對當天部長的在室/表演時間，依此彈性微調下午逛街與百貨卡位的順序，才不會錯過部長熱舞本尊！</p>
                         </div>
 
@@ -319,7 +306,6 @@
                 </div>
             </div>
 
-            <!-- DAY 3 -->
             <div id="day-content-3" class="day-content space-y-4 hidden">
                 <div class="washi-card p-5 rounded-xl border-l-4 border-amber-800">
                     <div class="flex justify-between items-start border-b pb-2 mb-4 border-stone-200">
@@ -347,7 +333,7 @@
                                     <a href="https://maps.app.goo.gl/1kd3CaoT6bRhEDfWA" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline">🗺️ 草千里停車場導航</a>
                                 </div>
                             </div>
-                            <p class="text-stone-600 mt-1">欣賞冬日壯闊黑土與原野火山白煙。午餐推薦：「New Kusasenri」二樓看著火山大景，享用熱騰騰必吃的在地名產**「阿蘇赤牛丼」**。</p>
+                            <p class="text-stone-600 mt-1">欣賞冬日壯闊黑土與原野火山白煙。午餐推薦：「New Kusasenri」二樓看著火山大景，享用熱騰騰必吃的在地名產**「阿蘇赤牛丼環境」**。</p>
                             <p class="text-amber-800 font-medium mt-1">🏇 騎馬體驗：5 分鐘草千里冬日繞行，單人 1,500 日圓 | 親子組 (1大1小) 2,500 日圓。</p>
                         </div>
 
@@ -370,23 +356,22 @@
                             <p class="text-stone-700 mt-1">**安全行車叮嚀**：絕對不要走高海拔容易結冰的九重山路！全程走地勢平緩的「國道57號」，經由竹田市、大分市切往別府市區。路況寬闊穩定，兩台車各自維持安全車速，三個孩子正好在後座舒舒服服睡午覺。</p>
                         </div>
 
-                        <!-- 別府新訂房小町莊資料卡 -->
                         <div class="relative bg-stone-100 p-4 rounded-xl border border-stone-300 text-xs space-y-2">
                             <h3 class="font-bold text-stone-800 text-sm border-b pb-1">♨️ 17:30 - 18:00 抵達別府溫泉宿：ゆけむりの宿 小町荘</h3>
                             <p><strong>📍 地址導航：</strong> 〒874-0046 大分県別府市北中1組-3</p>
                             <div class="flex flex-wrap gap-2 my-1 items-center">
                                 <button onclick="copyMapCode('46 522 552*66')" class="bg-amber-700 text-white px-2 py-0.5 rounded font-mono text-xs">📋 車機 MC: 46 522 552*66</button>
-                                <a href="https://maps.app.goo.gl/3mTtDc2mR8wHaegh9" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline">🗺️ Google地圖導航</a>
+                                <a href="https://maps.app.goo.gl/mTgHNQwfGLZNMuA7A" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline">🗺️ Google地圖導航</a>
                                 <span class="bg-stone-200 px-2 py-0.5 rounded font-mono text-xs">📞 撥號：0977-80-1419</span>
                             </div>
-                            <p><strong>🚗 自駕停車：</strong> 民宿敷地內自帶免費專屬停車場（可停 3-4 台車）， 2 台自駕車可直接一起免開銷停入，下大行李極方便。</p>
+                            <p><strong>🚗 自駕停車：</strong> 民宿敷地內自帶免費專屬停車場（可停 3-4 台車），2 台自駕車可直接一起免開銷停入，下大行李極方便。</p>
                             <p><strong>🛒 機能便利店：</strong> 民宿大馬路正對面走路 2 分鐘即是<strong>【Lawson 別府北中店】</strong>，半夜買零食飲料穿拖鞋散步即達。</p>
                         </div>
 
                         <div class="relative bg-amber-50/70 p-3 rounded-lg border border-amber-200 text-xs">
                             <div class="absolute -left-[22px] top-4 bg-amber-800 w-3 h-3 rounded-full"></div>
                             <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">18:00 晚餐 (時間與日期調整)</span>
-                            <div class="flex flex-wrap gap-1 items-center">
+                            <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
                                 <h3 class="font-bold text-sm text-amber-950">頂級豐後牛牛排饗宴【ステーキ茶屋そむり】(別府本店)</h3>
                                 <div class="flex flex-wrap gap-1 items-center">
                                     <button onclick="copyMapCode('46 374 577*55')" class="text-xs bg-amber-700 text-white px-2 py-0.5 rounded font-mono">📋 MC: 46 374 577*55</button>
@@ -400,12 +385,11 @@
 
                     <div class="mt-4 bg-stone-100 p-3 rounded-lg border border-stone-300 text-xs">
                         <span class="font-bold text-stone-800">🎯 晚間任務 (泡湯後大型採買)</span>
-                        <p class="text-stone-600 mt-1">飯後全家泡完暖呼呼的私人大溫泉，散步 4 分鐘前往綠色招牌 **【コスモス (COSMOS 藥妝免稅超市北中店)】**（營業至 21:00）。它是大型免稅藥妝結合超市，可直接刷護照退稅！在此買齊大草莓、鮮奶與黑咖啡包。</p>
+                        <p class="text-stone-600 mt-1">飯後全家泡完暖呼呼的私人大溫泉，散步 4 分鐘前往綠色招牌 **【コスモス (COSMOS 藥妝免稅超市 北中店)】**（營業至 21:00）。它是大型免稅藥妝結合超市，可直接刷護照退稅！在此買齊大草莓、鮮奶與黑咖啡包。</p>
                     </div>
                 </div>
             </div>
 
-            <!-- DAY 4 -->
             <div id="day-content-4" class="day-content space-y-4 hidden">
                 <div class="washi-card p-5 rounded-xl border-l-4 border-amber-800">
                     <div class="flex justify-between items-start border-b pb-2 mb-4 border-stone-200">
@@ -413,7 +397,7 @@
                             <h2 class="serif-title font-bold text-xl text-stone-800">Day 4 - 2/3 (週三) 由布院慢活童話鎮 ➔ 空中高空纜車 ➔ 別府地獄巡禮</h2>
                             <p class="text-sm text-stone-500 mt-1">🏠 住宿：ゆけむりの宿 小町荘（續住第 2 晚）</p>
                         </div>
-                        <span class="text-xs font-bold bg-amber-100 text-amber-800 px-2 py-1 rounded">2/3 (週 Wednesdays)</span>
+                        <span class="text-xs font-bold bg-amber-100 text-amber-800 px-2 py-1 rounded">2/3 (週三)</span>
                     </div>
 
                     <div class="space-y-5 relative border-l border-stone-300 pl-4 ml-2">
@@ -428,7 +412,7 @@
                                 </div>
                             </div>
                             <p class="text-stone-600 mt-1">08:30-09:15 民宿客廳內悠閒享用自備早餐。09:30-10:00 從別府開車 30 分鐘前往由布院。*(行駛高速公路單程僅約 940 日圓，ETC 自動感應過路)*</p>
-                            <p class="text-stone-600 mt-1">一路悠閒散步到金鱗湖。午餐推薦：「由布釜飯心」金鱗湖本店，享用香氣噴發的傳統豐後牛、地雞釜飯三吃大餐。散步小點心精準狙擊：順路排隊外帶「菊家布丁銅鑼燒」與「Milch半熟起司蛋糕 (買熱的 Hot 流沙爆漿)」。</p>
+                            <p class="text-stone-600 mt-1">一路悠閒散步到金鱗湖，暢逛龍貓專賣店。午餐推薦：「由布釜飯心」金鱗湖本店，享用香氣噴發的傳統豐後牛、地雞釜飯三吃大餐。散步小點心精準狙擊：順路排隊外帶「菊家布丁銅鑼燒」與「Milch半熟起司蛋糕 (買熱的 Hot 流沙爆漿)」。</p>
                         </div>
 
                         <div class="relative text-xs">
@@ -437,14 +421,13 @@
                             <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
                                 <h3 class="font-bold text-sm">搭乘【別府空中纜車】</h3>
                                 <div class="flex flex-wrap gap-1 items-center">
-                                    <button onclick="copyMapCode('46 428 544*63')" class="text-xs bg-amber-700 text-white px-2 py-0.5 rounded font-mono">📋 MC: 46 428 544*63</button>
+                                    <button onclick="copyMapCode('46 428 544*63')" class="text-xs bg-amber-700 text-white px-2 py-0.5 rounded hover:bg-amber-800 font-mono">📋 MC: 46 428 544*63</button>
                                     <a href="https://maps.app.goo.gl/jBJumBBAGYwLWsw48" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline">🗺️ 空中纜車停車場導航</a>
                                 </div>
                             </div>
                             <p class="text-stone-600 mt-1">13:30-13:50 返回別府方向，開車 20 分鐘順路停靠纜車總站。體驗 101 人高空巨型車廂，直達鶴見岳山頂俯瞰銀白霧松雪景。票價：成人來回 1,800 日圓 / 兒童 900 日圓。</p>
                         </div>
 
-                        <!-- 別府地獄巡禮彈性精算區塊 -->
                         <div class="relative bg-stone-50 p-3 rounded-lg border border-stone-200 text-xs space-y-2">
                             <h3 class="font-bold text-stone-800 text-sm">🌋 15:15 - 16:30 別府地獄巡禮（現場視體力彈性串聯）</h3>
                             <div class="bg-amber-50 p-2.5 rounded border border-amber-200 text-amber-950 font-medium">
@@ -470,7 +453,7 @@
                                 <div class="bg-white p-2 rounded border">
                                     <div class="font-bold text-red-900 flex justify-between items-center flex-wrap gap-2">
                                         <span>🩸 彈性備案B (拍血紅大景)：【血池地獄】</span>
-                                        <a href="https://maps.app.goo.gl/1Ss6DvTSCSsMFuMT8" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline">🗺️ 血池停車場導航</a>
+                                        <a href="https://maps.app.goo.gl/1Ss6DvTSCSsMFuMT8" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline">🗺️ 血池地獄停車場連結</a>
                                     </div>
                                     <div class="flex flex-wrap gap-2 my-1">
                                         <button onclick="copyMapCode('46 542 678*64')" class="bg-amber-700 text-white px-2 py-0.5 rounded font-mono text-xs">📋 MC: 46 542 678*64</button>
@@ -481,14 +464,12 @@
                             </div>
                         </div>
 
-                        <!-- 泡湯前生鮮大採購 -->
                         <div class="relative bg-emerald-50/40 p-3 rounded border border-emerald-100 text-xs">
                             <span class="font-bold text-emerald-950 block mb-1">🛒 泡湯前深夜宵夜大採買！</span>
                             <p class="text-stone-600">回民宿享受溫泉前，2 台車順路開去車程 3 分鐘的 **【マルショクやまなみ店 (Marushoku 傳統生鮮超市)】** （MAP CODE: 46 522 626*33，營業至 22:00，自帶大型免費停車場）。</p>
                             <p class="text-emerald-900 font-medium mt-1">🎯 宵夜大狙擊：狂掃大盒生魚片拼盤、日本現炸雞塊、串燒熟食、現切水果大盛合，帶回小町莊冰箱冰起來，當作晚上的終極溫泉宵夜派對！</p>
                         </div>
 
-                        <!-- 水天晚餐時間提前 -->
                         <div class="relative bg-stone-50 p-3 rounded border border-stone-200 text-xs">
                             <div class="absolute -left-[22px] top-4 bg-stone-800 w-3 h-3 rounded-full"></div>
                             <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">18:00 晚餐 (時間提前)</span>
@@ -504,7 +485,6 @@
                 </div>
             </div>
 
-            <!-- DAY 5 -->
             <div id="day-content-5" class="day-content space-y-4 hidden">
                 <div class="washi-card p-5 rounded-xl border-l-4 border-amber-800">
                     <div class="flex justify-between items-start border-b pb-2 mb-4 border-stone-200">
@@ -534,7 +514,6 @@
                             <h3 class="font-bold text-sm mt-1">【九州自然動物園 African Safari】體驗</h3>
                             <p class="text-stone-600 mt-1">**叢林巴士必勝法**：確保在 08:30 開園前到場，一開門立刻秒抽第一批最熱門的**「叢林巴士獅子號碼券」**！三個孩子親手拿長夾，近距離餵食大象、大獅子與非洲棕熊！隨後下午在園區內放鬆自駕逛草食動物區。</p>
                             
-                            <!-- 💡 新增：2台車購票不拆散終極大招卡片 -->
                             <div class="mt-3 bg-blue-50 p-3.5 rounded-xl border border-blue-200 text-xs shadow-sm space-y-2">
                                 <span class="font-bold text-blue-900 block text-sm">🚌 2台車購票「不拆散」超簡單英文大招 (免背日文版)</span>
                                 <ol class="list-decimal ml-4 space-y-1.5 text-stone-700">
@@ -552,14 +531,14 @@
                         <div class="relative bg-stone-50 p-3 rounded border border-stone-200 text-xs">
                             <div class="absolute -left-[22px] top-4 bg-amber-800 w-3 h-3 rounded-full"></div>
                             <span class="font-bold text-stone-800 text-xs">▲ 高速公路安全回程 (13:30 - 15:30)</span>
-                            <p class="text-stone-600 mt-1">【車程約 2 小時，插 ETC 扣款約 5,120 日圓】 全程走最寬敞的高速公路：【大分道➔鳥栖JCT➔九州道】一路向南安全切回熊本。路況極佳且全無積雪風險。兩台車維持安全車距，孩子們在後座熟睡午覺。</p>
+                            <p class="text-stone-600 mt-1">【車程約 2 小時，插 ETC 扣款約 5,120 日圓】 全程走最寬敞的高速公路：【大分道➔鳥栖JCT➔九州道】一路向南安全切回熊本。路況極佳且全無積雪風險，孩子們在後座熟睡午覺。</p>
                             
                             <div class="mt-2.5 bg-amber-50 p-2.5 rounded border border-amber-200 text-xs text-amber-950">
                                 <div class="flex flex-wrap items-center justify-between gap-2 border-b border-amber-200 pb-1 mb-1">
                                     <span class="font-bold">☕ 最順路中途休息站：【山田 SA (上り)】</span>
-                                    <a href="https://maps.app.goo.gl/5NQKXAp1LFwK9QAQ7" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline">🗺️ 山田SA地圖導航</a>
+                                    <a href="https://maps.app.goo.gl/5NQKXAp1LFwK9QAQ7" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline">🗺️ 山田SA地圖導航連結</a>
                                 </div>
-                                <p class="mt-1">走大分道往熊本方向，「山田SA」是完全在動線上、不必繞路的最佳休息選擇！兩台車可在這裡下車舒展筋骨、上洗手間，正駕駛可以喝杯熱黑咖啡、吃在地特色點心（如炸雞、乳製品）補充體力！📌 山田 SA MAP CODE: 166 435 316*77</p>
+                                <p class="mt-1">走大分道往熊本方向，「山田SA」是完全在動線上、不必繞路的最佳休息選擇！兩台車可在這裡下車舒展筋骨、上洗手間，正駕駛可以喝杯熱黑咖啡、吃在地特色點心補充體力！📌 山田 SA MAP CODE: 166 435 316*77</p>
                             </div>
                         </div>
 
@@ -569,8 +548,7 @@
                             <div class="flex flex-wrap items-center justify-between gap-2 mt-2">
                                 <h3 class="font-bold text-sm text-red-900">5大3小除夕大團圓・黑毛和牛頂級燒肉【和牛燒肉 LIEBE】</h3>
                                 <div class="flex gap-1 flex-wrap">
-                                    <a href="https://maps.app.goo.gl/Pau8yfPkLwjLW7X66" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline">🗺️ 車站飯店地圖導航</a>
-                                    <a href="https://maps.app.goo.gl/a2hWv3SNf5RvxwHe6" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline">🗺️ 燒肉 LIEBE 地圖導航</a>
+                                    <a href="https://maps.app.goo.gl/a2hWv3SNf5RvxwHe6" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline">🗺️ 燒肉 LIEBE 地圖連結</a>
                                 </div>
                             </div>
                             <p class="text-stone-600 mt-2">15:30 順利抵達熊本車站商圈新飯店，辦理 Check-in 放置隨身行李。</p>
@@ -581,7 +559,6 @@
                 </div>
             </div>
 
-            <!-- DAY 6 -->
             <div id="day-content-6" class="day-content space-y-4 hidden">
                 <div class="washi-card p-5 rounded-xl border-l-4 border-amber-800">
                     <div class="flex justify-between items-start border-b pb-2 mb-4 border-stone-200">
@@ -603,7 +580,7 @@
                                 <span class="font-bold text-amber-900 block">🍜 11:00 午餐卡位攻略（首選：黑亭拉麵）</span>
                                 <p class="text-stone-600 leading-relaxed">11:00 一開門去卡位最安全！如果需要排隊，強烈建議告知店員可以拆成「4人+4人」分桌坐，進店入座速度快一倍！</p>
                                 <div class="pt-1.5 border-t border-dashed border-stone-200">
-                                    <span class="font-bold text-stone-800">🏢 商場高樓層 (AMU DINING 6F/7F) 獨立餐廳大備案（有舒適大桌、大沙發，拒絕人擠人美食街）：</span>
+                                    <span class="font-bold text-stone-800">🏢 商場高樓層 (AMU DINING 6F/7F) 獨立餐廳大備案：</span>
                                     <p class="mt-1">・**備案①【天草福伸 (7F)】**：頂級產地海鮮丼、天婦羅定食，備有大碗海鮮烏龍麵與精緻兒童餐，座位大，門口有候位機可以登記，全家可以去旁邊吹冷氣逛街不用苦站。</p>
                                     <p class="mt-1">・**備案②【みのりみのる (6F)】**：JA 農業協會直營，黑毛和牛赤牛排、肥後豬排，孩子們最愛的手作爆漿漢堡排，沙發大桌坐起來極放鬆。</p>
                                 </div>
@@ -617,7 +594,7 @@
 
                         <div class="relative text-xs">
                             <div class="absolute -left-[22px] top-1 bg-amber-800 w-3 h-3 rounded-full"></div>
-                            <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">13:45 時間微調打包</span>
+                            <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">13:45 行李車邊大落實</span>
                             <h3 class="font-bold text-sm mt-1">★ 飯店車邊大打包 ➔ 14:00 準時發車還車</h3>
                             <p class="text-stone-600 mt-1">全家返回飯店櫃檯提領全數行李箱，直接在特約/周邊平面停車場，於車邊將今天買的所有免稅戰利品迅速分裝塞進行李箱，預留 15 分鐘打包時間。**14:00 2台自駕車準時由熊本車站商圈出發**，避開後續下班車潮，平穩開往機場。</p>
                         </div>
@@ -635,35 +612,104 @@
                         <div class="relative bg-amber-50 p-4 rounded-xl border border-amber-300 text-xs">
                             <div class="absolute -left-[22px] top-5 bg-amber-800 w-3 h-3 rounded-full"></div>
                             <span class="text-xs font-mono font-bold text-amber-800 bg-amber-100 px-1.5 py-0.5 rounded">15:20 - 18:35 安心通關分水嶺</span>
-                            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-amber-200 pb-1.5 mb-2">
-                                <h3 class="font-bold text-sm text-stone-800">阿蘇熊本機場全新保稅區大連通 —— 新制退稅 ➔ 國內線免稅街逆向快攻</h3>
-                                <span class="font-mono bg-stone-200 text-stone-700 px-1.5 py-0.5 rounded text-[11px]">對應提示：map2.jpg</span>
-                            </div>
+                            <h3 class="font-bold text-sm text-stone-800 border-b pb-1 mb-2">阿蘇熊本機場全新保稅區大連通 —— 新制退稅 ➔ 國內線免稅街逆向快攻</h3>
                             
-                            <div class="mt-2 text-stone-700 space-y-2 leading-relaxed font-medium">
-                                <p>1. **新制機場退稅辦理**：抵達國際線航廈後，先至退稅查驗櫃檯/電子機台，從容辦理日本新制退稅手續。因為提早抵達，完全免去大排長龍的緊張感！</p>
-                                <p>2. **大行李託運**：前往華航櫃檯辦理報到、大行李託運，拿到實體登機證（機票）。</p>
+                            <div class="text-stone-700 space-y-2 leading-relaxed font-medium">
+                                <p>1. **新制機場退稅辦理**：先至退稅查驗櫃檯/電子機台，從容辦理日本新制退稅手續。</p>
+                                <p>2. **大行李託運**：前往華航櫃檯辦理報到、大行李託運，拿到實體登機證。</p>
                                 <p>3. **先過國際線安檢**：全員直接上樓通過「國際線安全檢查處」。</p>
-                                <p>4. **掃描機票去國內線保稅區**：入關安檢後，直接「用登機證掃描連通閘門」，整組人一路暢通地逆向走去寬敞無敵的「國內線出發等候區 (商店 & 餐廳)」！瘋狂逛爆全新完工的 25 間頂級熊本美食街與特色伴手禮大本營！</p>
-                                <p class="text-red-700 font-bold bg-red-50 p-2 rounded border border-red-200">5. 🚨 起飛前 60 分鐘溫馨折返黃金時間：請全家人注意時間，**最晚 17:35 前** 必須折返回到國際線出境安檢處，並完成出境審查海關通關！因為國內線等候區與國際線出發等候區內部並無互相連結。</p>
-                                <p class="text-amber-900 font-bold bg-amber-50 p-2 rounded border border-amber-200">6. ❌ 嚴禁採購物品警告：在國內線等候區採購時，切勿購買生食與飲料，任何超過 100ml 的液體類伴手禮也嚴禁手提，以免在折返國際線安檢時被沒收放棄。</p>
+                                <p>4. **掃描機票去國內線保稅區**：入關安檢後，直接「用登機證掃描連通閘門」，暢通地逆向走去寬敞無敵的「國內線出發等候區 (商店&餐廳)」！瘋狂逛爆全新完工的 25 間頂級熊本美食街與特色伴手禮大本營！</p>
+                                <p class="text-red-700 font-bold bg-red-50 p-2 rounded border border-red-200">5. 🚨 起飛前 60 分鐘溫馨折返黃金時間：請全家人注意時間，**最晚 17:35 前** 必須折返回到國際線出境安檢處，並完成出境審查海關通關！</p>
+                                <p class="text-amber-900 font-bold bg-amber-50 p-2 rounded border border-amber-200">6. ❌ 嚴禁採購物品警告：在國內線等候區採購時，切勿購買生食與飲料， any 超過 100ml 的液體類伴手禮也嚴禁手提，以免在折返國際線安檢時被沒收。</p>
                             </div>
                             
-                            <!-- 補回最後一天機場動線提示圖片 (map2.jpg) -->
                             <div class="mt-4 bg-white p-2 rounded-xl border border-stone-200 shadow-sm max-w-xl mx-auto">
                                 <img src="map2.jpg" class="w-full h-auto rounded-lg" alt="熊本機場國際線旅客利用國內線等候區動線指引">
-                                <p class="text-[11px] text-stone-500 text-center mt-1.5 font-mono">📍 map2.jpg: 阿蘇熊本機場官方發行 —— 國際線旅客利用國內線出發等候區雙向動線與 60 分鐘折返告示</p>
+                                <p class="text-[11px] text-stone-500 text-center mt-1.5 font-mono">📍 map2.jpg: 國際線旅客利用國內線出發等候區動線與 60 分鐘折返告示</p>
                             </div>
 
                             <p class="text-stone-600 mt-3 font-semibold text-center border-t pt-3 border-amber-200">
-                                🛫 18:35 搭乘華航班機返回台灣 ➔ 預計 20:10 抵達桃園機場第二航廈 (T2)，優雅回溫暖的家！
+                                🛫 18:35 搭乘華航班機返回台灣 ➔ 預計 20:10 抵達桃園機場第二航廈，優雅回到溫暖的家！
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 提示訊息彈窗 -->
+            <div id="day-content-7" class="day-content space-y-4 hidden">
+                <div class="washi-card p-5 rounded-xl border-l-4 border-amber-700">
+                    <div class="flex justify-between items-start border-b pb-2 mb-3 border-stone-300">
+                        <div>
+                            <h2 class="serif-title font-bold text-xl text-stone-800">🛍️ 家族瘋狂血拼核對清單</h2>
+                            <p class="text-xs text-stone-500 mt-1">日本藥妝、超市與在地伴手禮必買終極清單（手機隨身查閱版）</p>
+                        </div>
+                        <span class="text-xs font-bold bg-amber-100 text-amber-800 px-2 py-1 rounded">免稅大作戰</span>
+                    </div>
+                    
+                    <div class="mb-4 bg-white p-3 rounded-lg border border-stone-200 text-xs">
+                        <div class="flex justify-between font-bold text-stone-700 mb-1">
+                            <span>🛒 戰利品搜集進度</span>
+                            <span id="shop-percent">0%</span>
+                        </div>
+                        <div class="w-full bg-stone-200 rounded-full h-2">
+                            <div id="shop-bar" class="bg-amber-600 h-2 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                        <div class="bg-white p-3 rounded-xl border border-stone-200 space-y-2">
+                            <h3 class="font-bold text-purple-900 bg-purple-50 px-2 py-1 rounded border border-purple-100 text-sm">1. 藥妝店必鎖定 (Cosmos/一般藥妝)</h3>
+                            <div class="space-y-1.5 pl-1">
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>樂敦 THE LYPO 高滲透維他命C：最新美白透明感神物。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>ROIHI-TSUBOKO 溫感大貼布：舒緩辦公自駕疲勞神器。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>UHA味覺糖補鐵軟糖(鐵&葉酸)：輕鬆補鐵穩定心情。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>Wakamoto 若元錠 / 太田胃散：大餐應酬胃腸不適必備。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>小林製藥 10小時加濕護喉口罩：就寢用，防暖氣房乾癢。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>EVE止痛藥 (藍色/銀色款)：居家必備，減緩頭痛生理痛神速。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>MEDICARE內炎/喉嚨痛噴霧：緩解破洞、出國燥熱腫痛。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>Biore 冷感濕巾：應對超強暖氣房與長途開車降溫神物。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>曼秀雷敦夜間修護潤唇精華(Repair ONE)：深度修護防乾裂。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>DHC 速攻藍莓/鐵質/維他命D：高吸收率每日基礎保養。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>Finish 洗碗錠：日本免稅大包裝價差超有感，大消耗品。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>蜂蜜亮澤柔順髮油：櫻花妹人手一瓶，擦完順滑度拉滿。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>合利他命EX Plus：舒緩長輩、雙駕駛及久坐肩頸痠痛。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>血池地獄軟膏：<span class="text-red-700 font-bold">Day4現場限定</span>，對皮膚粗糙蚊蟲叮咬有奇效。</span></label>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-3 rounded-xl border border-stone-200 space-y-2">
+                            <h3 class="font-bold text-emerald-900 bg-emerald-50 px-2 py-1 rounded border border-emerald-100 text-sm">2. 生鮮超市&超商必掃貨</h3>
+                            <div class="space-y-1.5 pl-1">
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>7-11巧克力沾醬奶油條餅乾：Butter State's出品濃郁神級餅乾。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>Zeppin 或 S&B甘口咖哩塊：味道濃郁，適合煮給三個寶貝吃。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>7-11 菠蘿麵包軟糖(パングミ)：砂糖質感哈密瓜香，寶貝最愛。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>日本當季大草莓 / 熊本不知火柑：冬日來日必吃水果天花板。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>Glico LIBERA 抗糖抗脂微苦巧克力：長途開車解饞無罪惡感。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>Glico GABA 紓壓牛奶巧克力：減輕壓力疲勞，正副駕駛必備。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>味霸 (250克裝)：萬用神級調味料，炒菜煮湯一匙秒變大廚。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>小倉屋鹽昆布 / 桃屋生蒜醬：主婦料理靈魂萬用調味鐵三角。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>熟食生魚片拼盤/日式炸雞塊：Day4晚上別府溫泉宵夜派對首選。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>大福 / 宇治抹茶小蛋糕：給三個寶貝車上的輕巧點心。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>阿蘇牛奶 / 濃郁優格：原產地新鮮直送，早晚人手一瓶補天然鈣。</span></label>
+                                <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>溏心蛋 / 冷藏溫泉蛋：極佳高蛋白純淨來源，搭黑咖啡必備。</span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-3 rounded-xl border border-stone-200 space-y-2 text-xs">
+                        <h3 class="font-bold text-amber-900 bg-amber-50 px-2 py-1 rounded border border-amber-100 text-sm">3. 九州限定頂級伴手禮 (車站 & 機場大本營)</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1.5 pl-1">
+                            <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>譽之陣太鼓 (香梅)：紅豆包年糕，精緻大氣，送長輩首選。</span></label>
+                            <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>黑糖多圈圈棒 (フジバンビ)：純黑糖香，配純黑咖啡是絕配。</span></label>
+                            <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>由布院布丁銅鑼燒 (菊家)：Day4順手買，內夾冰涼布丁，孩子秒融化。</span></label>
+                            <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>大分香頭柑 (Kabosu) 系列點心：別府特產，酸甜清爽。</span></label>
+                            <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>博多明太子仙貝 (MENBEI)：香辣酥脆，大人下酒、辦公室分食神器.</span></label>
+                            <label class="flex items-start gap-2 text-stone-600"><input type="checkbox" class="shop-item mt-0.5 rounded text-amber-700"> <span>一蘭拉麵 / 黑亭拉麵盒裝版：把九州傳奇拉麵風味完美打包回台。</span></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div id="toast" class="fixed bottom-5 right-5 bg-stone-800 text-white text-xs py-2 px-4 rounded-lg opacity-0 transition-opacity duration-300 pointer-events-none z-50">
                 Map Code 已複製！
             </div>
@@ -675,7 +721,6 @@
         🍁 一口美景、一口美食，祝 5大3小家族自駕溫泉冬日之旅大飽口福、大獲全勝！
     </footer>
 
-    <!-- JavaScript 交互邏輯 -->
     <script>
         function switchDay(dayNum) {
             document.querySelectorAll('.day-content').forEach(content => {
@@ -703,15 +748,29 @@
             });
         }
 
+        // 攜帶清單進度條
         const checkBoxes = document.querySelectorAll('.pack-item');
         const progressBar = document.getElementById('packing-bar');
-
         checkBoxes.forEach(box => {
             box.addEventListener('change', () => {
                 const checkedCount = document.querySelectorAll('.pack-item:checked').length;
                 const totalCount = checkBoxes.length;
                 const percentage = (checkedCount / totalCount) * 100;
                 progressBar.style.width = `${percentage}%`;
+            });
+        });
+
+        // 血拼清單進度條
+        const shopBoxes = document.querySelectorAll('.shop-item');
+        const shopBar = document.getElementById('shop-bar');
+        const shopPercent = document.getElementById('shop-percent');
+        shopBoxes.forEach(box => {
+            box.addEventListener('change', () => {
+                const checkedCount = document.querySelectorAll('.shop-item:checked').length;
+                const totalCount = shopBoxes.length;
+                const percentage = Math.round((checkedCount / totalCount) * 100);
+                shopBar.style.width = `${percentage}%`;
+                shopPercent.innerText = `${percentage}%`;
             });
         });
     </script>
