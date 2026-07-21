@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>熊本・別府冬日自駕終極整合手冊 v51_mobile</title>
+    <title>熊本・別府冬日自駕終極整合手冊 v55_mobile</title>
     <!-- 引入 Tailwind CSS 提供現代化快速排版 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts 引入優雅的日文字型風格 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght=400;700&family=Noto+Sans+TC:wght=300;400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* 啟用全網頁原生平滑滾動，優雅直達 */
+        /* 啟用全網頁原生平滑滾動 */
         html {
             scroll-behavior: smooth;
         }
@@ -32,9 +32,9 @@
 
     <!-- Header Hero Section -->
     <header class="max-w-5xl mx-auto text-center my-4 p-6 washi-card rounded-xl border-t-4 border-amber-700">
-        <span class="text-amber-800 font-bold tracking-widest text-xs bg-amber-100 px-3 py-1 rounded-full">5大3小家族溫泉自駕6天5夜隨身攜帶手冊 (手機點擊 V51 時間精算版)</span>
+        <span class="text-amber-800 font-bold tracking-widest text-xs bg-amber-100 px-3 py-1 rounded-full">5大3小家族溫泉自駕6天5夜隨身攜帶手冊 (手機點擊 V55 纜車運行官網加強版)</span>
         <h1 class="serif-title text-2xl md:text-4xl font-bold mt-3 text-stone-800 tracking-tight">熊本・別府冬日自駕終極整合手冊</h1>
-        <p class="text-stone-500 mt-2 font-mono text-xs">📅 行程週期：1/31 (週日) - 2/5 (週五) | 版本：v51_mobile</p>
+        <p class="text-stone-500 mt-2 font-mono text-xs">📅 行程週期：1/31 (週日) - 2/5 (週五) | 版本：v55_mobile</p>
         
         <!-- 快速Memo -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 text-sm text-left">
@@ -95,7 +95,7 @@
                 </div>
             </section>
 
-            <!-- 📡 即時即查連結專區 -->
+            <!-- 📡 即時即查連結專區 (v55 加強版) -->
             <section class="washi-card p-5 rounded-xl border-l-4 border-red-500">
                 <h2 class="serif-title font-bold text-lg text-stone-800 border-b pb-2 mb-3 border-stone-300">📡 旅途重要即時即查連結</h2>
                 <div class="space-y-2.5 text-xs">
@@ -107,6 +107,13 @@
                     </a>
                     <p class="text-[10px] text-red-600 font-medium px-1 -mt-1.5">※ 秒查火山見學狀態是「見學可」或「閉門中」！</p>
                     
+                    <!-- v55 新增：別府纜車運行官網 -->
+                    <a href="https://www.beppu-ropeway.co.jp/tw/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2.5 bg-purple-50 hover:bg-purple-100 rounded-lg border border-purple-200 text-purple-900 font-bold transition-colors no-underline shadow-sm">
+                        <span>🚡 別府纜車即時運行狀態官網</span>
+                        <span class="bg-purple-600 text-white text-[10px] px-2 py-0.5 rounded-full">官網秒查 ➔</span>
+                    </a>
+                    <p class="text-[10px] text-purple-700 font-medium px-1 -mt-1.5">※ 出發前秒查強風/保養停駛狀態！</p>
+
                     <hr class="border-stone-200 my-2">
                     
                     <span class="font-bold text-stone-700 block mb-1">🇯🇵 日本氣象廳中文即時預報：</span>
@@ -162,7 +169,7 @@
                 </div>
             </section>
 
-            <!-- 行程前準備清單 -->
+            <!-- 行程前準備清單 (v55 寶貝對講機加強) -->
             <section class="washi-card p-5 rounded-xl">
                 <div class="flex justify-between items-center border-b pb-2 mb-3 border-stone-300">
                     <h2 class="serif-title font-bold text-lg text-stone-800">🧳 旅行用攜帶物品清單</h2>
@@ -170,7 +177,7 @@
                 <div class="w-full bg-stone-200 rounded-full h-1.5 mb-4">
                     <div id="packing-bar" class="bg-amber-700 h-1.5 rounded-full" style="width: 0%"></div>
                 </div>
-                <div class="space-y-4 text-xs max-h-[280px] overflow-y-auto pr-1">
+                <div class="space-y-4 text-xs max-h-[300px] overflow-y-auto pr-1">
                     <div>
                         <h3 class="font-bold text-stone-700 mb-1.5 bg-stone-200 px-2 py-0.5 rounded">■ 重要證件、文件 & 現金</h3>
                         <label class="flex items-start gap-2 mb-1"><input type="checkbox" class="pack-item mt-0.5 rounded text-amber-700"> <span>護照正本 (確認效期6個月以上)</span></label>
@@ -191,6 +198,8 @@
                         <label class="flex items-start gap-2 mb-1"><input type="checkbox" class="pack-item mt-0.5 rounded text-amber-700"> <span>兒童隨身小背包、保溫水壺</span></label>
                         <label class="flex items-start gap-2 mb-1"><input type="checkbox" class="pack-item mt-0.5 rounded text-amber-700"> <span>乾/濕紙巾、備用換洗衣物一套</span></label>
                         <label class="flex items-start gap-2 mb-1"><input type="checkbox" class="pack-item mt-0.5 rounded text-amber-700"> <span>體力補給零食、車上解饞小餅乾</span></label>
+                        <!-- v55 新增 -->
+                        <label class="flex items-start gap-2 mb-1 bg-red-100/60 p-1 rounded"><input type="checkbox" class="pack-item mt-0.5 rounded text-amber-700"> <span class="font-bold text-red-900">📻 寶貝兒童玩具對講機 (三隻小寶貝車上互相對講通話神物)</span></label>
                     </div>
                     <div>
                         <h3 class="font-bold text-stone-700 mb-1.5 bg-stone-200 px-2 py-0.5 rounded">■ 電子、藥品 & 隨身雜物</h3>
@@ -283,7 +292,7 @@
                             <p class="text-xs text-stone-600 mt-1">【平地大馬路，車程約 40-45 分鐘】安全極佳，直奔熊本車站商圈。預計抵達民宿放好行李已超過晚上 8 點。</p>
                         </div>
 
-                        <!-- 🏡 住宿明細 (已校對 MC: 29 428 732*41) -->
+                        <!-- 🏡 住宿明細 -->
                         <div class="relative bg-stone-100 p-4 rounded-xl border border-stone-300 text-xs space-y-2">
                             <h3 class="font-bold text-amber-900 text-sm border-b pb-1">🏡 獨棟別墅：SUMITSUGU HOUSE Station</h3>
                             <p class="text-stone-500 text-[11px]">極具美感的日式古民家改建獨棟別墅！包棟不擔心吵到鄰居，全家極具家庭大團圓感。</p>
@@ -347,7 +356,7 @@
                             <p class="text-xs text-stone-600 mt-1">出發開車大約 10-12 分鐘即可輕鬆抵達熊本城專用停車場（自車站商圈一路向北，市區路況平穩好開）。</p>
                         </div>
 
-                        <!-- 熊本城 (已校對 二之丸 MC: 29 489 254*68) -->
+                        <!-- 熊本城 -->
                         <div class="relative bg-stone-50 p-3 rounded-lg border border-stone-200 text-xs space-y-2">
                             <h3 class="font-bold text-stone-800 text-sm">🏯 10:00 - 12:00 參觀【熊本城】與【熊本城稻荷神社】</h3>
                             <p class="text-stone-500 text-[11px]">天守閣內部設有現代化電梯，長輩與小孩免操勞。</p>
@@ -378,7 +387,7 @@
                             </div>
                         </div>
 
-                        <!-- 城彩苑 (已校對 城彩苑 MC: 29 489 051*77) -->
+                        <!-- 城彩苑 -->
                         <div class="relative text-stone-800 bg-stone-50 p-3 rounded-lg border border-stone-200 text-xs">
                             <div class="absolute -left-[22px] top-4 bg-amber-800 w-3 h-3 rounded-full"></div>
                             <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">12:00 - 14:30</span>
@@ -411,7 +420,7 @@
                             <p class="text-stone-600 mt-1">・<strong>追星指南：</strong>直達鶴屋百貨東館 1 樓的熊本熊部長辦公室！</p>
                             <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%8F%E3%81%BE%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline mt-1 mb-2 font-normal">🗺️ くまモンスクエア (熊本熊廣場) 地圖導航連結</a>
                             
-                            <!-- 🚨 部長表演時間即時查詢專區 -->
+                            <!-- 部長表演時間即時查詢專區 -->
                             <div class="mt-2 bg-red-50 p-3 rounded-xl border border-red-200 text-red-900 space-y-2 shadow-sm">
                                 <span class="font-bold block text-red-800">🚨 部長追星重要備忘：</span>
                                 <p class="text-xs text-stone-700 leading-relaxed">
@@ -452,12 +461,12 @@
                 </div>
             </div>
 
-            <!-- DAY 3 (純淨升級版：神社 ➔ 山康赤牛 ➔ 草千里 ➔ 直奔別府晚宴) -->
+            <!-- DAY 3 -->
             <div id="day-content-3" class="day-content space-y-4 hidden">
                 <div class="washi-card p-5 rounded-xl border-l-4 border-amber-800">
                     <div class="flex justify-between items-start border-b pb-2 mb-4 border-stone-200">
                         <div>
-                            <h2 class="serif-title font-bold text-xl text-stone-800">Day 3 - 秘境神社 ➔ 赤牛大餐 ➔ 火山草千里 ➔ 直奔別府晚宴</h2>
+                            <h2 class="serif-title font-bold text-xl text-stone-800">Day 3 - 秘境神社 ➔ 赤牛大餐 ➔ 火山草千里 ➔ 順路採草莓 ➔ 直奔別府晚宴</h2>
                             <p class="text-sm text-stone-500 mt-1">🏠 住宿：ゆけむりの宿 小町荘（Komachisou / 連住 2 晚，大行李免動）</p>
                         </div>
                         <span class="text-xs font-bold bg-amber-100 text-amber-800 px-2 py-1 rounded whitespace-nowrap">2/2 (週二)</span>
@@ -490,7 +499,7 @@
                             <p class="text-stone-600 mt-1">漫步宛如螢火之森的高聳古樹參道，晨光薄霧中拍攝夢幻家族合照。</p>
                         </div>
 
-                        <!-- 2. 午餐：山康赤牛丼 (精準連結與 MapCode) -->
+                        <!-- 2. 午餐：山康赤牛丼 -->
                         <div class="relative bg-amber-50/80 p-3.5 rounded-lg border border-amber-200 text-xs space-y-2 shadow-sm">
                             <div class="absolute -left-[22px] top-4 bg-amber-800 w-3 h-3 rounded-full"></div>
                             <span class="text-xs font-mono font-bold text-amber-900 bg-amber-100 px-1.5 py-0.5 rounded">10:45 - 12:15</span>
@@ -512,7 +521,7 @@
                         <!-- 3. 阿蘇草千里 -->
                         <div class="relative text-stone-800 bg-stone-50 p-3 rounded-lg border border-stone-200 text-xs space-y-2">
                             <div class="absolute -left-[22px] top-4 bg-amber-800 w-3 h-3 rounded-full"></div>
-                            <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">12:30 - 15:00</span>
+                            <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">12:30 - 14:40</span>
                             <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
                                 <h3 class="font-bold text-sm">沿全景線盤旋上山，暢遊【阿蘇草千里】</h3>
                                 <button onclick="copyMapCode('256 456 730*08')" class="text-xs bg-amber-700 text-white px-2 py-0.5 rounded hover:bg-amber-800 font-mono">📋 MC: 256 456 730*08</button>
@@ -541,14 +550,30 @@
                             </p>
                         </div>
 
-                        <!-- 4. 下山平地安全路線 -->
+                        <!-- 4.果實之國 COUPLES 採草莓 -->
+                        <div class="relative bg-red-50/90 p-3.5 rounded-lg border border-red-300 text-xs shadow-sm space-y-1.5">
+                            <div class="absolute -left-[22px] top-4 bg-red-600 w-3 h-3 rounded-full"></div>
+                            <span class="text-xs font-mono font-bold text-red-800 bg-red-100 px-1.5 py-0.5 rounded">15:05 - 15:30 順路神插隊</span>
+                            <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
+                                <h3 class="font-bold text-sm text-red-950">🍓【順路採草莓與甜點下午茶】果實之國 COUPLES (果実の国カップルズ)</h3>
+                                <div class="flex flex-wrap gap-1 items-center">
+                                    <button onclick="copyMapCode('256 612 844*44')" class="text-xs bg-amber-700 text-white px-2 py-0.5 rounded hover:bg-amber-800 font-mono">📋 MC: 256 612 844*44</button>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=%E6%9E%9C%E5%AE%9F%E3%81%AE%E5%9B%BD%E3%82%AB%E3%83%83%E3%83%97%E3%83%AB%E3%82%BA" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline font-normal">🗺️ 果實之國 COUPLES 地圖導航</a>
+                                </div>
+                            </div>
+                            <p class="text-stone-700 mt-1 leading-relaxed">
+                                <strong>🍓 順路零繞路亮點：</strong> 草千里開車約 25 分鐘下山，正好位於全景線接國道 57 號入口！乾淨高架溫室採草莓，或外帶超人氣現烤手作蘋果派與濃郁草莓霜淇淋，給大人小孩車上補充體力！
+                            </p>
+                        </div>
+
+                        <!-- 5. 下山平地安全路線 -->
                         <div class="relative bg-amber-50 p-3 rounded border border-amber-200 text-xs">
                             <div class="absolute -left-[22px] top-4 bg-amber-800 w-3 h-3 rounded-full"></div>
-                            <span class="font-bold text-amber-900 text-xs">▲ 下山直奔別府市區 (15:00 - 17:30) 【走國道57號平地安全路線，車程約2小時】</span>
+                            <span class="font-bold text-amber-900 text-xs">▲ 下山直奔別府市區 (15:30 - 17:30) 【走國道57號平地安全路線，車程約2小時】</span>
                             <p class="text-stone-700 mt-1">**冬季黃金安全路線**：絕對不要走高海拔容易結冰的九重山路！全程走地勢平緩的「國道57號」，經由竹田市、大分市直奔別府市區。路況寬闊穩定，三個孩子正好在後座舒舒服服睡午覺。</p>
                         </div>
 
-                        <!-- 5. 晚餐動線最佳化：先吃 SOMURI 牛排 -->
+                        <!-- 6. 晚餐動線最佳化：先吃 SOMURI 牛排 -->
                         <div class="relative bg-amber-50/90 p-3.5 rounded-lg border border-amber-300 text-xs shadow-sm">
                             <div class="absolute -left-[22px] top-4 bg-amber-800 w-3 h-3 rounded-full"></div>
                             <span class="text-xs font-mono font-bold text-amber-900 bg-amber-200 px-1.5 py-0.5 rounded">17:30 晚餐【動線最佳化：先吃晚餐】</span>
@@ -572,7 +597,7 @@
                             </p>
                         </div>
 
-                        <!-- 6. 吃飽抵達民宿 Check-in -->
+                        <!-- 7. 吃飽抵達民宿 Check-in -->
                         <div class="relative bg-stone-100 p-4 rounded-xl border border-stone-300 text-xs space-y-2">
                             <span class="text-xs font-mono font-bold text-stone-600 bg-stone-200 px-1.5 py-0.5 rounded">19:15 入住</span>
                             <h3 class="font-bold text-stone-800 text-sm border-b pb-1 mt-1">吃飽開車 10 分鐘抵達別府民宿【ゆけむりの宿 小町荘】</h3>
@@ -591,7 +616,7 @@
                         </div>
                     </div>
 
-                    <!-- 晚間任務 (已校對 Marushoku MC: 46 522 205*15) -->
+                    <!-- 晚間任務 -->
                     <div class="mt-4 bg-stone-100 p-3 rounded-lg border border-stone-300 text-xs">
                         <span class="font-bold text-stone-800">🎯 晚間任務</span>
                         <p class="text-stone-600 mt-1">
@@ -611,7 +636,7 @@
                 </div>
             </div>
 
-            <!-- DAY 4 -->
+            <!-- DAY 4 (v55 別府纜車官網加強) -->
             <div id="day-content-4" class="day-content space-y-4 hidden">
                 <div class="washi-card p-5 rounded-xl border-l-4 border-amber-800">
                     <div class="flex justify-between items-start border-b pb-2 mb-4 border-stone-200">
@@ -629,7 +654,7 @@
                             <p class="text-stone-600 mt-1">民宿內 10 分鐘享用昨晚在 COSMOS 採購好的快攻早餐。續住同民宿，大行李留房內，套上外套直接出發，省去晨間搬運行李大混亂！🚗 08:00 全員準時發車，兩台空車後座寬敞舒適，自駕開往動物園。【山路地勢，車程約 25 分鐘】</p>
                         </div>
 
-                        <!-- 九州野生動物園 (已校對 動物園 MC: 46 634 658*87) -->
+                        <!-- 九州野生動物園 -->
                         <div class="relative bg-stone-50 p-3.5 rounded-lg border border-stone-200 text-xs space-y-2">
                             <div class="absolute -left-[22px] top-4 bg-amber-800 w-3 h-3 rounded-full"></div>
                             <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">08:25 衝鋒開園</span>
@@ -685,7 +710,7 @@
                             </div>
                         </div>
 
-                        <!-- 別府纜車 (已校對 纜車 MC: 46 369 844*81) -->
+                        <!-- 別府纜車 (v55 官網連結升級) -->
                         <div class="relative text-xs">
                             <div class="absolute -left-[22px] top-1 bg-amber-800 w-3 h-3 rounded-full"></div>
                             <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">13:30 - 15:15</span>
@@ -698,16 +723,28 @@
                                 </div>
                             </div>
                             <p class="text-stone-600 mt-1">體驗可容納 101 人的巨型高空車廂，直達鶴見岳山頂俯瞰銀白霧淞與別府灣絕景。</p>
-                            <div class="mt-2.5 bg-sky-50 p-2.5 rounded border border-sky-200 text-[11px]">
-                                <span class="font-bold text-sky-900">🌫️ 空中纜車大霧查驗指標：</span> 高山最怕大霧白牆。出發前可隨手點開 <a href="https://www.data.jma.go.jp/multi/yoho/yoho_detail.html?code=440010&lang=cn_zt" target="_blank" class="text-blue-600 font-bold underline">大分・別府地區即時天氣預報 (日本氣象廳)</a> 掌握山頂氣候。
+                            
+                            <!-- v55 加強：纜車運行官網與氣象雙指標 -->
+                            <div class="mt-2.5 bg-purple-50 p-3 rounded-xl border border-purple-200 text-[11px] space-y-1.5 shadow-sm">
+                                <span class="font-bold text-purple-900 block border-b border-purple-200 pb-1">🚡 空中纜車運行與大霧雙重查驗指標 (出發前必看)：</span>
+                                <div class="flex flex-col gap-1.5 mt-1">
+                                    <a href="https://www.beppu-ropeway.co.jp/tw/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-1.5 bg-white rounded border border-purple-300 hover:bg-purple-100 text-purple-900 font-bold no-underline transition-colors">
+                                        <span>🔗 1. 🚡 別府纜車官網即時運行狀態 (強風/保養確認)</span>
+                                        <span class="bg-purple-600 text-white text-[10px] px-2 py-0.5 rounded-full">秒查運行 ➔</span>
+                                    </a>
+                                    <a href="https://www.data.jma.go.jp/multi/yoho/yoho_detail.html?code=440010&lang=cn_zt" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-1.5 bg-white rounded border border-sky-300 hover:bg-sky-50 text-sky-900 font-bold no-underline transition-colors">
+                                        <span>🔗 2. 🌫️ 大分・別府地區即時天氣預報 (山頂視野/大霧)</span>
+                                        <span class="bg-sky-600 text-white text-[10px] px-2 py-0.5 rounded-full">氣象廳中文 ➔</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- 別府地獄 (已校對 海地獄 MC: 46 521 440*64) -->
+                        <!-- 別府地獄 -->
                         <div class="relative bg-stone-50 p-3.5 rounded-lg border border-stone-200 text-xs space-y-2">
                             <h3 class="font-bold text-stone-800 text-sm">🌋 15:15 - 16:45 別府地獄巡禮 (門票大門單買即可，時間自由度極高)</h3>
                             <div class="bg-amber-50 p-2.5 rounded border border-amber-200 text-amber-950 text-[11px] leading-relaxed">
-                                💡 <strong>門票精算提醒：</strong> 因為只踩點 1~2 個最代表性的地獄，千萬不要購買共通券！直接在各景點大門單買門票 (大人 500 日圓) 最划算，完全無集卡壓力，累了隨時可收工回民宿泡湯！
+                                💡 <strong>門票精算提醒：</strong> 因為只踩點 1~2 個最代表性的地獄，千萬不要購買共通券！直接在各景點大門單買門票 (大人 500日圓 / 中小學 250日圓) 最划算，完全無集卡壓力，累了隨時可收工回民宿泡湯！
                             </div>
                             <div class="space-y-2 text-[11px]">
                                 <div class="bg-white p-2.5 rounded border">
@@ -736,7 +773,7 @@
                             <p class="text-stone-600 mt-1">全家返回小町莊民宿，輕鬆上洗手間、喝水，長輩和小朋友可以先在和室塌塌米上稍微瞇一下、舒緩體力。</p>
                         </div>
 
-                        <!-- 水天迴轉壽司 (已校對 水天 MC: 46 403 440*11) -->
+                        <!-- 水天迴轉壽司 -->
                         <div class="relative bg-stone-50 p-3 rounded border border-stone-200 text-xs">
                             <div class="absolute -left-[22px] top-4 bg-stone-800 w-3 h-3 rounded-full"></div>
                             <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">18:00 晚餐</span>
@@ -768,12 +805,12 @@
                 </div>
             </div>
 
-            <!-- DAY 5 -->
+            <!-- DAY 5 (已更新麥當勞精準地圖連結) -->
             <div id="day-content-5" class="day-content space-y-4 hidden">
                 <div class="washi-card p-5 rounded-xl border-l-4 border-amber-800">
                     <div class="flex justify-between items-start border-b pb-2 mb-4 border-stone-200">
                         <div>
-                            <h2 class="serif-title font-bold text-xl text-stone-800">Day 5 - 由布院童話鎮慢活 ➔ 順路高速公路回程 ➔ 熊本大團圓圍爐</h2>
+                            <h2 class="serif-title font-bold text-xl text-stone-800">Day 5 - 日本麥當勞朝マック ➔ 由布院慢活 ➔ 順路高速公路 ➔ 熊本圍爐</h2>
                             <p class="text-sm text-stone-500 mt-1">🏠 住宿：One Station Hotel Kumamoto</p>
                         </div>
                         <span class="text-xs font-bold bg-amber-100 text-amber-800 px-2 py-1 rounded whitespace-nowrap">2/4 (週四)</span>
@@ -783,16 +820,32 @@
                         <div class="relative text-xs">
                             <div class="absolute -left-[22px] top-1 bg-amber-800 w-3 h-3 rounded-full"></div>
                             <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">07:30 - 08:15</span>
-                            <p class="text-stone-600 mt-1">在小町莊客廳悠閒享用自備早餐，不慌不忙地做最後打包。 09:00 全員準時辦理退房，行李大打包上車，揮別別府。</p>
+                            <p class="text-stone-600 mt-1">全家悠閒梳洗、退房打包行李上車。</p>
+                        </div>
+
+                        <!-- v55 新增：日本麥當勞朝マック 早餐 (已填入專屬精準 Maps 網址) -->
+                        <div class="relative bg-red-50/90 p-3.5 rounded-lg border border-red-200 text-xs shadow-sm space-y-1.5">
+                            <div class="absolute -left-[22px] top-4 bg-red-600 w-3 h-3 rounded-full"></div>
+                            <span class="text-xs font-mono font-bold text-red-800 bg-red-100 px-1.5 py-0.5 rounded">08:15 - 09:00 晨間限定大解鎖</span>
+                            <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
+                                <h3 class="font-bold text-sm text-red-950">🍔【晨間限定大解鎖：日本麥當勞朝マック早餐】</h3>
+                                <a href="https://maps.app.goo.gl/MCBi7WKALYnYGXxY9" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline font-normal">🗺️ 麥當勞 別府山の手店 地圖導航</a>
+                            </div>
+                            <p class="text-stone-700 mt-1 leading-relaxed">
+                                開車約 6-8 分鐘前往周邊麥當勞（如：麥當勞別府山の手店）！<br>
+                                ・<strong>🥞 必點亮點：</strong> 日本超狂名物「<strong>鬆餅豬肉蛋堡 (McGriddles / マックグリドル)</strong>」，印有雙拱門的楓糖鬆餅搭配鹹香豬肉起司蛋，甜鹹爆漿超美味！<br>
+                                ・<strong>🎁 寶貝驚喜：</strong> 幫三個寶貝點「<strong>Happy Set (ハッピーセット) 兒童餐</strong>」，收集日本限定玩具/繪本，吃得開心又滿足！
+                            </p>
                         </div>
 
                         <div class="relative text-xs">
                             <div class="absolute -left-[22px] top-1 bg-amber-800 w-3 h-3 rounded-full"></div>
                             <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">09:00 - 09:30</span>
-                            <p class="text-stone-600 mt-1"><strong>【自駕黃金省時不走回頭路：別府 ➔ 由布院】</strong> 沿著「別府IC」上高速公路，開車 30 分鐘直接直達由布院。行駛大分自動車道，單程過路費僅約 940 日圓 (插 ETC 自動扣款，無雪地風險)。</p>
+                            <p class="text-stone-600 mt-1">吃飽喝足，直接由麥當勞順路直上「別府IC」高速公路，出發開往由布院 (車程僅 30 分鐘)。</p>
+                            <p class="text-stone-500 mt-0.5"><strong>【自駕黃金省時不走回頭路：別府 ➔ 由布院】</strong> 沿著「別府IC」上高速公路，開車 30 分鐘直接直達由布院。行駛大分自動車道，單程過路費僅約 940 日圓 (插 ETC 自動扣款，無雪地風險)。</p>
                         </div>
 
-                        <!-- 湯之坪 & 獅子停車場 (已校對 獅子停車場3 MC: 269 359 728*61) -->
+                        <!-- 湯之坪 & 獅子停車場 -->
                         <div class="relative text-stone-800 bg-stone-50 p-3 rounded-lg border border-stone-200 text-xs">
                             <div class="absolute -left-[22px] top-4 bg-amber-800 w-3 h-3 rounded-full"></div>
                             <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">09:30 - 13:30</span>
@@ -815,7 +868,7 @@
                             </p>
                         </div>
 
-                        <!-- 山田SA (已校對 山田SA MC: 166 735 414*37) -->
+                        <!-- 山田SA -->
                         <div class="relative bg-stone-50 p-3 rounded border border-stone-200 text-xs space-y-2">
                             <div class="absolute -left-[22px] top-4 bg-amber-800 w-3 h-3 rounded-full"></div>
                             <span class="font-bold text-stone-800 text-xs block">▲ 【省時高速回程：由布院直接上國道 ➔ 熊本車站飯店，車程約1小時45分鐘】</span>
@@ -830,7 +883,7 @@
                             </div>
                         </div>
 
-                        <!-- One Station Hotel & JR熊本第3停車場 (已校對 JR熊本第3停車場 MC: 29 428 513*62) -->
+                        <!-- One Station Hotel & JR熊本第3停車場 -->
                         <div class="relative bg-stone-100 p-4 rounded-xl border border-stone-300 text-xs space-y-2">
                             <span class="text-xs font-mono font-bold text-stone-600 bg-stone-200 px-1.5 py-0.5 rounded">15:30 抵達</span>
                             <h3 class="font-bold text-stone-800 text-sm border-b pb-1 mt-1">順利抵達熊本車站新飯店，辦理 Check-in 放置行李與大戰利品。</h3>
@@ -1068,7 +1121,7 @@
 
     <footer class="max-w-5xl mx-auto text-center my-12 text-xs text-stone-400">
         🍁 一口美景、一口美食，祝 5大3小家族自駕溫泉冬日之旅大飽口福、大獲全勝！<br>
-        <span class="font-mono mt-1 block">熊本・別府冬日自駕終極整合手冊 v51_mobile</span>
+        <span class="font-mono mt-1 block">熊本・別府冬日自駕終極整合手冊 v55_mobile</span>
     </footer>
 
     <!-- JavaScript 交互邏輯 -->
