@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>熊本・別府冬日自駕終極整合手冊 v64_mobile</title>
+    <title>熊本・別府冬日自駕終極整合手冊 v67_mobile</title>
     <!-- 引入 Tailwind CSS 提供現代化快速排版 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts 引入優雅的日文字型風格 -->
@@ -32,9 +32,9 @@
 
     <!-- Header Hero Section -->
     <header class="max-w-5xl mx-auto text-center my-4 p-6 washi-card rounded-xl border-t-4 border-amber-700">
-        <span class="text-amber-800 font-bold tracking-widest text-xs bg-amber-100 px-3 py-1 rounded-full">5大3小家族溫泉自駕6天5夜隨身攜帶手冊 (v64 Day 1 Super Kid 超市連結補齊版)</span>
+        <span class="text-amber-800 font-bold tracking-widest text-xs bg-amber-100 px-3 py-1 rounded-full">5大3小家族溫泉自駕6天5夜隨身攜帶手冊 (v67 地圖連結精準更新版)</span>
         <h1 class="serif-title text-2xl md:text-4xl font-bold mt-3 text-stone-800 tracking-tight">熊本・別府冬日自駕終極整合手冊</h1>
-        <p class="text-stone-500 mt-2 font-mono text-xs">📅 行程週期：1/31 (週日) - 2/5 (週五) | 版本：v64_mobile</p>
+        <p class="text-stone-500 mt-2 font-mono text-xs">📅 行程週期：1/31 (週日) - 2/5 (週五) | 版本：v67_mobile</p>
         
         <!-- 快速Memo -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 text-sm text-left">
@@ -196,8 +196,7 @@
                         <h3 class="font-bold text-red-800 mb-1.5 bg-red-50 px-2 py-0.5 rounded">👶 寶貝專區 (彎彎、肉肉、妞妞)</h3>
                         <label class="flex items-start gap-2 mb-1"><input type="checkbox" class="pack-item mt-0.5 rounded text-amber-700"> <span>兒童隨身小背包、保溫水壺</span></label>
                         <label class="flex items-start gap-2 mb-1"><input type="checkbox" class="pack-item mt-0.5 rounded text-amber-700"> <span>乾/濕紙巾、備用換洗衣物一套</span></label>
-                        <label class="flex items-start gap-2 mb-1"><input type="checkbox" class="pack-item mt-0.5 rounded text-amber-700"> <span>體力補給零食、車上解饞小餅乾</span></label>
-                        <label class="flex items-start gap-2 mb-1 bg-red-100/60 p-1 rounded"><input type="checkbox" class="pack-item mt-0.5 rounded text-amber-700"> <span class="font-bold text-red-900">📻 寶貝兒童玩具對講機 (三隻小寶貝車上互相對講通話神物)</span></label>
+                        <label class="flex items-start gap-2 mb-1"><input type="checkbox" class="pack-item mt-0.5 rounded text-amber-700"> <span>體力補給零味、車上解饞小餅乾</span></label>
                     </div>
                     <div>
                         <h3 class="font-bold text-stone-700 mb-1.5 bg-stone-200 px-2 py-0.5 rounded">■ 電子、藥品 & 隨身雜物</h3>
@@ -216,16 +215,16 @@
         <div id="schedule-section" class="space-y-6 lg:col-span-2 scroll-mt-4">
             <!-- 頁籤按鈕 -->
             <div class="flex flex-wrap gap-1 bg-stone-200 p-1 rounded-xl shadow-sm">
-                <button onclick="switchDay(1)" id="tab-btn-1" class="day-tab flex-1 min-w-[50px] text-center py-2 rounded-lg font-bold text-xs bg-amber-800 text-white transition-all">D1</button>
-                <button onclick="switchDay(2)" id="tab-btn-2" class="day-tab flex-1 min-w-[50px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all">D2</button>
-                <button onclick="switchDay(3)" id="tab-btn-3" class="day-tab flex-1 min-w-[50px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all">D3</button>
-                <button onclick="switchDay(4)" id="tab-btn-4" class="day-tab flex-1 min-w-[50px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all">D4</button>
-                <button onclick="switchDay(5)" id="tab-btn-5" class="day-tab flex-1 min-w-[50px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all">D5</button>
-                <button onclick="switchDay(6)" id="tab-btn-6" class="day-tab flex-1 min-w-[50px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all">D6</button>
-                <button onclick="switchDay(7)" id="tab-btn-7" class="day-tab flex-1 min-w-[80px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all text-amber-900 flex items-center justify-center gap-1">🛍️血拼</button>
+                <button data-day="1" id="tab-btn-1" class="day-tab flex-1 min-w-[50px] text-center py-2 rounded-lg font-bold text-xs bg-amber-800 text-white transition-all cursor-pointer">D1</button>
+                <button data-day="2" id="tab-btn-2" class="day-tab flex-1 min-w-[50px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all cursor-pointer">D2</button>
+                <button data-day="3" id="tab-btn-3" class="day-tab flex-1 min-w-[50px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all cursor-pointer">D3</button>
+                <button data-day="4" id="tab-btn-4" class="day-tab flex-1 min-w-[50px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all cursor-pointer">D4</button>
+                <button data-day="5" id="tab-btn-5" class="day-tab flex-1 min-w-[50px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all cursor-pointer">D5</button>
+                <button data-day="6" id="tab-btn-6" class="day-tab flex-1 min-w-[50px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all cursor-pointer">D6</button>
+                <button data-day="7" id="tab-btn-7" class="day-tab flex-1 min-w-[80px] text-center py-2 rounded-lg font-bold text-xs text-stone-600 hover:bg-stone-300 transition-all text-amber-900 flex items-center justify-center gap-1 cursor-pointer">🛍️血拼</button>
             </div>
 
-            <!-- DAY 1 (v64 補齊 Super Kid 超市導航) -->
+            <!-- DAY 1 -->
             <div id="day-content-1" class="day-content space-y-4">
                 <div class="washi-card p-5 rounded-xl border-l-4 border-amber-800">
                     <div class="flex justify-between items-start border-b pb-2 mb-4 border-stone-200">
@@ -308,7 +307,7 @@
                             </div>
                         </div>
 
-                        <!-- 晚上活動任務 (v64 補齊 Super Kid 超市連結) -->
+                        <!-- 晚上活動任務 -->
                         <div class="relative bg-emerald-50/70 p-3.5 rounded-xl border border-emerald-200 text-xs">
                             <div class="absolute -left-[22px] top-4 bg-emerald-800 w-3 h-3 rounded-full"></div>
                             <span class="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-1.5 py-0.5 rounded">晚間任務</span>
@@ -575,7 +574,7 @@
                             <p class="text-stone-700 mt-1">**冬季黃金安全路線**：草千里遊覽完畢直接下山，全程走地勢平緩的「國道 57 號」經竹田、大分直奔別府。路況寬闊穩定，三個孩子正好在後座舒舒服服睡午覺充飽電，17:30 抵達別府市區停車，從容準備用餐！</p>
                         </div>
 
-                        <!-- 5. 晚餐：そむり牛排 -->
+                        <!-- 5. 晚餐：そむり牛排 (精準連結更新) -->
                         <div class="relative bg-amber-50/90 p-3.5 rounded-lg border border-amber-300 text-xs shadow-sm">
                             <div class="absolute -left-[22px] top-4 bg-amber-800 w-3 h-3 rounded-full"></div>
                             <span class="text-xs font-mono font-bold text-amber-900 bg-amber-200 px-1.5 py-0.5 rounded">18:00 晚餐【頂級豐後牛饗宴】</span>
@@ -583,7 +582,7 @@
                                 <h3 class="font-bold text-sm text-amber-950">享用官方認證【ステーキ茶屋そむり】(別府本店)</h3>
                                 <div class="flex flex-wrap gap-1 items-center">
                                     <button onclick="copyMapCode('46 375 864*37')" class="text-xs bg-amber-700 text-white px-2 py-0.5 rounded hover:bg-amber-800 font-mono">📋 車機 MC: 46 375 864*37</button>
-                                    <a href="https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD%E8%8C%B6%E5%B1%8B%E3%81%9D%E3%83%80%E3%82%8A+%E5%88%A5%E5%BA%9C%E6%9C%AC%E5%BA%97" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline font-normal">🗺️ そむり別府本店 地圖導航</a>
+                                    <a href="https://maps.app.goo.gl/snTqd5N9u7zsVuBf8" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline font-normal">🗺️ そむり別府本店 地圖導航</a>
                                 </div>
                             </div>
                             <div class="bg-white p-2.5 rounded border mt-2 space-y-1">
@@ -599,12 +598,12 @@
                             </p>
                         </div>
 
-                        <!-- 6. 吃飽抵達民宿 Check-in -->
+                        <!-- 6. 吃飽抵達民宿 Check-in (精準連結更新) -->
                         <div class="relative bg-stone-100 p-4 rounded-xl border border-stone-300 text-xs space-y-2">
                             <span class="text-xs font-mono font-bold text-stone-600 bg-stone-200 px-1.5 py-0.5 rounded">19:45 入住</span>
                             <h3 class="font-bold text-stone-800 text-sm border-b pb-1 mt-1">吃飽開車 10 分鐘抵達別府民宿【ゆけむりの宿 小町荘】</h3>
                             <p class="text-stone-500 text-[11px]">（Komachisou / 連住 2 晚，享受私人大湯泉，大行李免動）</p>
-                            <p><strong>📍 地址導航：</strong> <a href="https://www.google.com/maps/search/?api=1&query=%E5%B0%8F%E7%94%BA%E8%8D%98" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-bold underline">小町荘地圖導航連結</a> (〒874-0046 大分県別府市北中1組-3)</p>
+                            <p><strong>📍 地址導航：</strong> <a href="https://maps.app.goo.gl/BCPnRXkfopKRpKde7" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-bold underline">小町荘地圖導航連結</a> (〒874-0046 大分県別府市北中1組-3)</p>
                             <div class="flex flex-wrap gap-2 my-1 items-center">
                                 <button onclick="copyMapCode('46 493 819*68')" class="bg-amber-700 text-white px-2 py-0.5 rounded font-mono text-xs">📋 車機 MC: 46 493 819*68</button>
                                 <span class="bg-stone-200 px-2 py-0.5 rounded text-stone-600 font-mono">📞 電話：011-827-8018 (或 +8111-827-8018)</span>
@@ -659,7 +658,7 @@
                             <p class="text-stone-600 mt-1">民宿內 10 分鐘享用昨晚在 COSMOS 採購好的快攻早餐。續住同民宿，大行李留房內，套上外套直接出發，省去晨間搬運行李大混亂！🚗 08:00 全員準時發車，兩台空車後座寬敞舒適，自駕開往動物園。【山路地勢，車程約 25 分鐘】</p>
                         </div>
 
-                        <!-- 九州野生動物園 -->
+                        <!-- 九州野生動物園 (精準連結更新) -->
                         <div class="relative bg-stone-50 p-3.5 rounded-lg border border-stone-200 text-xs space-y-2">
                             <div class="absolute -left-[22px] top-4 bg-amber-800 w-3 h-3 rounded-full"></div>
                             <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">08:25 衝鋒開園</span>
@@ -667,7 +666,7 @@
                                 <h3 class="font-bold text-sm">★攻略核心黃金關鍵點★ 順利抵達【九州自然動物園 African Safari】大門口排隊！</h3>
                                 <div class="flex gap-1 items-center flex-wrap">
                                     <button onclick="copyMapCode('46 634 658*87')" class="text-xs bg-amber-700 text-white px-2 py-0.5 rounded hover:bg-amber-800 font-mono">📋 MC: 46 634 658*87</button>
-                                    <a href="https://www.google.com/maps/search/?api=1&query=%E4%B9%9D%E5%B7%9E%E8%87%AA%E7%84%B6%E5%8B%95%E7%89%A9%E5%85%AC%E5%9C%92" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline font-normal">🗺️ 九州自然動物公園 地圖導航連結</a>
+                                    <a href="https://maps.app.goo.gl/hmKaCrSH6RYCWZaL8" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline font-normal">🗺️ 九州自然動物公園 地圖導航連結</a>
                                 </div>
                             </div>
                             <p class="text-stone-600 mt-1">
@@ -748,7 +747,7 @@
                         <div class="relative bg-stone-50 p-3.5 rounded-lg border border-stone-200 text-xs space-y-2">
                             <h3 class="font-bold text-stone-800 text-sm">🌋 15:15 - 16:45 別府地獄巡禮 (門票大門單買即可，時間自由度極高)</h3>
                             <div class="bg-amber-50 p-2.5 rounded border border-amber-200 text-amber-950 text-[11px] leading-relaxed">
-                                💡 <strong>門票精算提醒：</strong> 因為只踩點 1~2 個最代表性的地獄，千萬不要購買共通券！直接在各景點大門單買門票 (大人 500日圓 / 中小學 250日圓) 最划算，完全無集卡壓力，累了隨時可收工回民宿泡湯！
+                                💡 <strong>門票精算提醒：</strong> 因為只踩點 1~2 個最代表性的地獄，千萬不要購買共通券！直接在各景點大門單買門票 (大人 500日圓 / 中小學 250日圓) 最劃算，完全無集卡壓力，累了隨時可收工回民宿泡湯！
                             </div>
                             <div class="space-y-2 text-[11px]">
                                 <div class="bg-white p-2.5 rounded border">
@@ -849,7 +848,7 @@
                             <p class="text-stone-500 mt-0.5"><strong>【自駕黃金省時不走回頭路：別府 ➔ 由布院】</strong> 沿著「別府IC」上高速公路，開車 30 分鐘直接直達由布院。行駛大分自動車道，單程過路費僅約 940 日圓 (插 ETC 自動扣款，無雪地風險)。</p>
                         </div>
 
-                        <!-- 湯之坪 & 獅子停車場 -->
+                        <!-- 湯之坪 & 獅子停車場 (精準連結更新) -->
                         <div class="relative text-stone-800 bg-stone-50 p-3 rounded-lg border border-stone-200 text-xs">
                             <div class="absolute -left-[22px] top-4 bg-amber-800 w-3 h-3 rounded-full"></div>
                             <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">09:30 - 13:30</span>
@@ -867,12 +866,12 @@
                                 </p>
                             </div>
                             <p class="text-stone-600 mt-3 leading-relaxed">
-                                ・<strong>午餐推薦：</strong><a href="https://www.google.com/maps/search/?api=1&query=%E7%94%B1%E5%B8%83%E9%87%9C%E9%A3%AF%E5%BF%83" target="_blank" class="text-blue-600 font-medium underline">由布釜飯心 金鱗湖本店 地圖導航</a> (享用香氣噴發的傳統豐後牛、地雞釜飯三吃大餐)<br>
+                                ・<strong>午餐推薦：</strong><a href="https://maps.app.goo.gl/36gQCitAB1YQVKg67" target="_blank" class="text-blue-600 font-medium underline">由布釜飯心 金鱗湖本店 地圖導航</a> (享用香氣噴發的傳統豐後牛、地雞釜飯三吃大餐)<br>
                                 ・<strong>🍡 散步點心精準狙擊：</strong>順路排隊外帶「菊家布丁銅鑼燒」與「Milch半熟起司蛋糕 (買熱的 Hot 流沙爆漿)」。
                             </p>
                         </div>
 
-                        <!-- 山田SA -->
+                        <!-- 山田SA (精準連結更新) -->
                         <div class="relative bg-stone-50 p-3 rounded border border-stone-200 text-xs space-y-2">
                             <div class="absolute -left-[22px] top-4 bg-amber-800 w-3 h-3 rounded-full"></div>
                             <span class="font-bold text-stone-800 text-xs block">▲ 【省時高速回程：由布院直接上國道 ➔ 熊本車站飯店，車程約1小時45分鐘】</span>
@@ -882,12 +881,12 @@
                                 <p class="mt-1">「山田SA」完全在回程高速公路上、不必繞路！兩台車可在這裡下車舒展筋骨、上洗手洗，正駕駛可以喝杯熱黑咖啡、吃個炸雞或牛奶霜淇淋補充能量！</p>
                                 <div class="mt-1 flex flex-wrap items-center gap-2">
                                     <button onclick="copyMapCode('166 735 414*37')" class="bg-amber-700 text-white px-2 py-0.5 rounded font-mono text-xs">📋 山田 SA MC: 166 735 414*37</button>
-                                    <a href="https://maps.app.goo.gl/QYtbXm1XhCmW9kdV6" target="_blank" class="text-blue-600 underline">山田SA上り 地圖導航連結</a>
+                                    <a href="https://maps.app.goo.gl/Rb5TCHmMwgdsdei57" target="_blank" class="text-blue-600 underline">山田SA上り 地圖導航連結</a>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- One Station Hotel & JR熊本第3停車場 -->
+                        <!-- One Station Hotel & JR熊本第3停車場 (精準連結更新) -->
                         <div class="relative bg-stone-100 p-4 rounded-xl border border-stone-300 text-xs space-y-2">
                             <span class="text-xs font-mono font-bold text-stone-600 bg-stone-200 px-1.5 py-0.5 rounded">15:30 抵達</span>
                             <h3 class="font-bold text-stone-800 text-sm border-b pb-1 mt-1">順利抵達熊本車站新飯店，辦理 Check-in 放置行李與大戰利品。</h3>
@@ -902,7 +901,7 @@
                                 <p class="font-semibold text-stone-900">🚗 自駕停車對策：指定配合停車場【JR熊本第3停車場】</p>
                                 <div class="flex flex-wrap gap-2 items-center mt-1 mb-1.5">
                                     <button onclick="copyMapCode('29 428 513*62')" class="bg-emerald-700 text-white px-2.5 py-1 rounded-full font-mono text-xs">📋 停車場 MC: 29 428 513*62</button>
-                                    <a href="https://maps.app.goo.gl/QYtbXm1XhCmW9kdV6" target="_blank" rel="noopener noreferrer" class="text-xs bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1 rounded-full transition-colors inline-flex items-center gap-1 shadow-sm no-underline font-bold">🗺️ JR熊本第3停車場地圖導航</a>
+                                    <a href="https://maps.app.goo.gl/UHzA6NbmyxJKDEDG8" target="_blank" rel="noopener noreferrer" class="text-xs bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1 rounded-full transition-colors inline-flex items-center gap-1 shadow-sm no-underline font-bold">🗺️ JR熊本第3停車場地圖導航</a>
                                 </div>
                                 <p class="text-stone-600 leading-relaxed"><strong>・備忘：</strong>請將 2 台車直接開往此指定停車場停放，距離飯店與 AMU PLAZA 熊本都很近！</p>
                                 <p class="text-emerald-800 bg-emerald-50 p-2 rounded border border-emerald-100 font-medium"><strong>・貼心備忘：</strong>飯店已確認接收到您提出的「車位安排」與「全家房間盡量相鄰」的特殊備註，現場辦理入住時可再次跟櫃檯核對確認唷！</p>
@@ -955,7 +954,7 @@
                                 
                                 <p class="font-bold text-stone-800 pt-1.5 border-t border-dashed">🏢 商場高樓層 (AMU DINING 6F/7F) 獨立餐廳大備案 (有舒適大桌、大沙發，拒絕人擠人美食街)：</p>
                                 <p><strong>・備案①【天草福伸 (7F)】：</strong><a href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E8%8F%AF%E7%A6%8F%E4%BC%B8+AMU+PLAZA" target="_blank" class="text-blue-600 underline">天草福伸 (AMU PLAZA 7F) 地圖導航連結</a> (頂級產地海鮮丼、天婦羅定食，備有大碗海鮮烏龍麵與精緻兒童餐，座位大，門口有候位機可以登記)</p>
-                                <p><strong>・備案②【みのりみのる (6F)】：</strong><a href="https://www.google.com/maps/search/?api=1&query=%E3%81%BF%E3%81%AE%E3%82%8A%E3%81%BF%E3%81%AE%E3%82%8B+AMU+PLAZA" target="_blank" class="text-blue-600 underline">みのりみのる (AMU PLAZA 6F) 地圖導航連結</a> (JA農業協會直營，黑毛和牛赤牛排、肥後豬排，沙發大桌坐起來極放鬆)</p>
+                                <p><strong>・備案②【みのりみのる / Minoru Shokudo (6F)】：</strong><a href="https://maps.app.goo.gl/hLauEmLPiYGKrGuB7" target="_blank" class="text-blue-600 underline">みのりみのる (AMU PLAZA 6F) 地圖導航連結</a> (JA農業協會直營，黑毛和牛赤牛排、肥後豬排，沙發大桌坐起來極放鬆)</p>
                             </div>
                             <p class="mt-2 text-stone-600">🛍️ <strong>伴手禮最終點心站：</strong>留足時間衝車站 1 樓的「肥後よかもん市場」！集結了陣太鼓、黑糖多圈圈等熊本所有老店，上飛機前一次買齊，順手再買一包散步甜食「黑糖多圈圈棒」解解饞！</p>
                         </div>
@@ -998,7 +997,7 @@
                                     <strong>4. 掃描機票去國內線保稅區：</strong><br>
                                     入關安檢後，直接「用登機證掃描連通閘門」，整組人一路暢通地逆向走去寬敞無敵的「國內線出發等候區 (商店&餐廳)」！
                                     <br>
-                                    <a href="https://www.google.com/maps/search/?api=1&query=%E9%98%BF%E8%98%87%E7%86%8A%E6%9C%AC%E6%A9%9F%E5%A0%B4" target="_blank" class="text-blue-600 font-bold underline inline-block mt-1">阿蘇熊本機場 地圖導航連結</a>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=%E9%88%B8%E8%98%87%E7%86%8A%E6%9C%AC%E6%A9%9F%E5%A0%B4" target="_blank" class="text-blue-600 font-bold underline inline-block mt-1">阿蘇熊本機場 地圖導航連結</a>
                                     <br>
                                     瘋狂逛爆全新完工的 25 間頂級熊本美食街與特色伴手禮大本營！
                                 </p>
@@ -1125,62 +1124,89 @@
 
     <footer class="max-w-5xl mx-auto text-center my-12 text-xs text-stone-400">
         🍁 一口美景、一口美食，祝 5大3小家族自駕溫泉冬日之旅大飽口福、大獲全勝！<br>
-        <span class="font-mono mt-1 block">熊本・別府冬日自駕終極整合手冊 v64_mobile</span>
+        <span class="font-mono mt-1 block">熊本・別府冬日自駕終極整合手冊 v67_mobile</span>
     </footer>
 
     <!-- JavaScript 交互邏輯 -->
     <script>
-        function switchDay(dayNum) {
-            document.querySelectorAll('.day-content').forEach(content => {
-                content.classList.add('hidden');
-            });
-            document.getElementById(`day-content-${dayNum}`).classList.remove('hidden');
+        document.addEventListener('DOMContentLoaded', function() {
+            // 頁籤切換功能
+            var tabs = document.querySelectorAll('.day-tab');
+            tabs.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    var dayNum = this.getAttribute('data-day');
+                    if (!dayNum) return;
 
-            document.querySelectorAll('.day-tab').forEach(btn => {
-                btn.classList.remove('bg-amber-800', 'text-white');
-                btn.classList.add('text-stone-600', 'hover:bg-stone-300');
+                    // 隱藏所有頁面
+                    var contents = document.querySelectorAll('.day-content');
+                    contents.forEach(function(content) {
+                        content.classList.add('hidden');
+                    });
+
+                    // 顯示目標頁面
+                    var targetContent = document.getElementById('day-content-' + dayNum);
+                    if (targetContent) {
+                        targetContent.classList.remove('hidden');
+                    }
+
+                    // 更新按鈕樣式
+                    tabs.forEach(function(tab) {
+                        tab.classList.remove('bg-amber-800', 'text-white');
+                        tab.classList.add('text-stone-600', 'hover:bg-stone-300');
+                    });
+                    this.classList.add('bg-amber-800', 'text-white');
+                    this.classList.remove('text-stone-600', 'hover:bg-stone-300');
+                });
             });
-            const activeBtn = document.getElementById(`tab-btn-${dayNum}`);
-            activeBtn.classList.add('bg-amber-800', 'text-white');
-            activeBtn.classList.remove('text-stone-600', 'hover:bg-stone-300');
+
+            // 攜帶清單進度條
+            var checkBoxes = document.querySelectorAll('.pack-item');
+            var progressBar = document.getElementById('packing-bar');
+            checkBoxes.forEach(function(box) {
+                box.addEventListener('change', function() {
+                    var checkedCount = document.querySelectorAll('.pack-item:checked').length;
+                    var totalCount = checkBoxes.length;
+                    var percentage = totalCount > 0 ? (checkedCount / totalCount) * 100 : 0;
+                    if (progressBar) progressBar.style.width = percentage + '%';
+                });
+            });
+
+            // 血拼清單進度條
+            var shopBoxes = document.querySelectorAll('.shop-item');
+            var shopBar = document.getElementById('shop-bar');
+            var shopPercent = document.getElementById('shop-percent');
+            shopBoxes.forEach(function(box) {
+                box.addEventListener('change', function() {
+                    var checkedCount = document.querySelectorAll('.shop-item:checked').length;
+                    var totalCount = shopBoxes.length;
+                    var percentage = totalCount > 0 ? Math.round((checkedCount / totalCount) * 100) : 0;
+                    if (shopBar) shopBar.style.width = percentage + '%';
+                    if (shopPercent) shopPercent.innerText = percentage + '%';
+                });
+            });
+        });
+
+        // 複製 Map Code 功能
+        function copyMapCode(code) {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(code).then(function() {
+                    showToast('已複製導航碼: ' + code);
+                });
+            } else {
+                showToast('已複製導航碼: ' + code);
+            }
         }
 
-        function copyMapCode(code) {
-            navigator.clipboard.writeText(code).then(() => {
-                const toast = document.getElementById('toast');
-                toast.innerText = `已複製導航碼: ${code}`;
+        function showToast(message) {
+            var toast = document.getElementById('toast');
+            if (toast) {
+                toast.innerText = message;
                 toast.classList.remove('opacity-0');
-                setTimeout(() => {
+                setTimeout(function() {
                     toast.classList.add('opacity-0');
                 }, 2000);
-            });
+            }
         }
-
-        // 攜帶清單進度條
-        const checkBoxes = document.querySelectorAll('.pack-item');
-        const progressBar = document.getElementById('packing-bar');
-        checkBoxes.forEach(box => {
-            box.addEventListener('change', () => {
-                const checkedCount = document.querySelectorAll('.pack-item:checked').length;
-                const totalCount = checkBoxes.length;
-                const percentage = (checkedCount / totalCount) * 100;
-                progressBar.style.width = `${percentage}%`;
-            });
-        });
-
-        // 血拼清單進度條
-        const shopBoxes = document.querySelectorAll('.shop-item');
-        const shopBar = document.getElementById('shop-bar');
-        const shopPercent = document.getElementById('shop-percent');
-        shopBoxes.forEach(box => {
-            box.addEventListener('change', () => {
-                const checkedCount = document.querySelectorAll('.shop-item:checked').length;
-                const totalCount = shopBoxes.length;
-                const percentage = Math.round((checkedCount / totalCount) * 100);
-                shopBar.style.width = `${percentage}%`;
-                shopPercent.innerText = `${percentage}%`;
-            });
-        });
     </script>
 </body>
 </html>
