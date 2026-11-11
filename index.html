@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>熊本・別府冬日自駕終極整合手冊 v69_mobile</title>
+    <title>熊本・別府冬日自駕終極整合手冊 v70_mobile</title>
     <!-- 引入 Tailwind CSS 提供現代化快速排版 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts 引入優雅的日文字型風格 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght=400;700&family=Noto+Sans+TC:wght=300;400;500;700&display=swap" rel="stylesheet">
     <style>
+        /* 啟用全網頁原生平滑滾動 */
         html {
             scroll-behavior: smooth;
         }
@@ -16,7 +17,6 @@
             font-family: 'Noto Sans TC', sans-serif;
             background-color: #f7f5ee; /* 練色紙質基底色 */
             color: #2b2b2b;
-            padding-bottom: 70px; /* 留給手機版底部吸附列空間 */
         }
         .serif-title {
             font-family: 'Noto Serif TC', serif;
@@ -26,12 +26,12 @@
             border: 1px solid #e6dfd3;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
         }
-        /* 列印優化樣式 */
+        /* 列印友善設定 */
         @media print {
-            body { background-color: #ffffff !important; padding-bottom: 0 !important; }
-            .day-content { display: block !important; margin-bottom: 2rem; page-break-after: always; }
             .no-print { display: none !important; }
-            .washi-card { box-shadow: none !important; border: 1px solid #ccc !important; }
+            .day-content { display: block !important; page-break-after: always; }
+            body { background-color: #ffffff !important; p: 0 !important; }
+            .washi-card { border: none !important; box-shadow: none !important; background: transparent !important; }
         }
     </style>
 </head>
@@ -40,14 +40,14 @@
     <!-- Header Hero Section -->
     <header class="max-w-5xl mx-auto text-center my-4 p-6 washi-card rounded-xl border-t-4 border-amber-700 relative">
         <div class="flex justify-between items-center mb-2 no-print">
-            <span class="text-amber-800 font-bold tracking-widest text-xs bg-amber-100 px-3 py-1 rounded-full">5大3小家族溫泉自駕6天5夜隨身手冊 (v69 圖像與導航完全復原版)</span>
+            <span class="text-amber-800 font-bold tracking-widest text-xs bg-amber-100 px-3 py-1 rounded-full">5大3小家族溫泉自駕6天5夜隨身手冊 (v70 D4 07:30發車微調版)</span>
             <button onclick="window.print()" class="text-xs bg-stone-700 hover:bg-stone-800 text-white font-medium px-3 py-1 rounded-lg transition-colors flex items-center gap-1">
                 🖨️ 列印全本手冊
             </button>
         </div>
         
         <h1 class="serif-title text-2xl md:text-4xl font-bold mt-2 text-stone-800 tracking-tight">熊本・別府冬日自駕終極整合手冊</h1>
-        <p class="text-stone-500 mt-2 font-mono text-xs">📅 行程週期：1/31 (週日) - 2/5 (週五) | 版本：v69_mobile</p>
+        <p class="text-stone-500 mt-2 font-mono text-xs">📅 行程週期：1/31 (週日) - 2/5 (週五) | 版本：v70_mobile</p>
         
         <!-- 快速Memo -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 text-sm text-left">
@@ -701,7 +701,7 @@
                             <p class="text-stone-500 text-[11px]">（Komachisou / 連住 2 晚，享受私人大湯泉，大行李免動）</p>
                             <p><strong>📍 地址導航：</strong> <a href="https://maps.app.goo.gl/BCPnRXkfopKRpKde7" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-bold underline">小町荘地圖導航連結</a> (〒874-0046 大分県別府市北中1組-3)</p>
                             <div class="flex flex-wrap gap-2 my-1 items-center">
-                                <button onclick="copyMapCode('46 493 819*68')" class="bg-amber-700 text-white px-2 py-0.5 rounded font-mono text-xs">📋 車機 MC: 46 493 819*68</button>
+                                <button onclick="copyMapCode('46 493 819*68')" class="bg-amber-700 text-white px-2 py-0.5 rounded hover:bg-amber-800 font-mono text-xs">📋 車機 MC: 46 493 819*68</button>
                                 <span class="bg-stone-200 px-2 py-0.5 rounded text-stone-600 font-mono">📞 電話：011-827-8018 (或 +8111-827-8018)</span>
                             </div>
                             
@@ -750,23 +750,23 @@
                     <div class="space-y-5 relative border-l border-stone-300 pl-4 ml-2">
                         <div class="relative text-xs" data-category="car">
                             <div class="absolute -left-[22px] top-1 bg-amber-800 w-3 h-3 rounded-full"></div>
-                            <span class="text-xs font-mono font-bold text-red-700 bg-red-50 px-1.5 py-0.5 rounded">07:30 - 07:50 【不用打包行李！輕裝快速出發】</span>
-                            <p class="text-stone-600 mt-1">民宿內 10 分鐘享用昨晚在 COSMOS 採購好的快攻早餐。續住同民宿，大行李留房內，套上外套直接出發，省去晨間搬運行李大混亂！🚗 08:00 全員準時發車，兩台空車後座寬敞舒適，自駕開往動物園。【山路地勢，車程約 25 分鐘】</p>
+                            <span class="text-xs font-mono font-bold text-red-700 bg-red-50 px-1.5 py-0.5 rounded">07:00 - 07:30 快攻早餐 ➔ 07:30【準時發車出發】</span>
+                            <p class="text-stone-600 mt-1">民宿內享用昨晚在 COSMOS 採購好的快攻早餐。續住同民宿，大行李留房內，套上外套直接出發，省去晨間搬運行李大混亂！🚗 <strong>07:30 全員準時發車出發</strong>，兩台空車後座寬敞舒適，自駕開往動物園。【山路地勢，車程約 25 分鐘】</p>
                         </div>
 
                         <!-- 九州野生動物園 -->
                         <div class="relative bg-stone-50 p-3.5 rounded-lg border border-stone-200 text-xs space-y-2" data-category="spot">
                             <div class="absolute -left-[22px] top-4 bg-amber-800 w-3 h-3 rounded-full"></div>
-                            <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">08:25 衝鋒開園</span>
+                            <span class="text-xs font-mono font-bold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded">08:00 早早抵達卡位 ➔ 08:25 衝鋒開園</span>
                             <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
-                                <h3 class="font-bold text-sm">★攻略核心黃金關鍵點★ 順利抵達【九州自然動物園 African Safari】大門口排隊！</h3>
+                                <h3 class="font-bold text-sm">★攻略核心黃金關鍵點★ 08:00 順利抵達【九州自然動物園 African Safari】大門口排隊！</h3>
                                 <div class="flex gap-1 items-center flex-wrap">
                                     <button onclick="copyMapCode('46 634 658*87')" class="text-xs bg-amber-700 text-white px-2 py-0.5 rounded hover:bg-amber-800 font-mono">📋 MC: 46 634 658*87</button>
                                     <a href="https://maps.app.goo.gl/hmKaCrSH6RYCWZaL8" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center gap-1 shadow-sm no-underline font-normal">🗺️ 九州自然動物公園 地圖導航連結</a>
                                 </div>
                             </div>
                             <p class="text-stone-600 mt-1">
-                                <strong>・叢林巴士必勝法：</strong> 確保在 08:30 開園前到場排隊，一開門列車得來速購票並秒抽第一批最熱門的「叢林巴士獅子號碼券」。三個孩子能親手拿長夾，近距離餵食大象、非洲大獅子與黑熊！下午則可在園內開著自駕車輕鬆逛草食動物區。
+                                <strong>・叢林巴士必勝法：</strong> 07:30 出發並於 08:00 前到場排隊，一開門列車得來速購票並秒抽第一批最熱門的「叢林巴士獅子號碼券」。三個孩子能親手拿長夾，近距離餵食大象、非洲大獅子與黑熊！下午則可在園內開著自駕車輕鬆逛草食動物區。
                             </p>
                             
                             <!-- 門票精算表 -->
@@ -1288,7 +1288,7 @@
 
     <footer class="max-w-5xl mx-auto text-center my-12 text-xs text-stone-400">
         🍁 一口美景、一口美食，祝 5大3小家族自駕溫泉冬日之旅大飽口福、大獲全勝！<br>
-        <span class="font-mono mt-1 block">熊本・別府冬日自駕終極整合手冊 v69_mobile</span>
+        <span class="font-mono mt-1 block">熊本・別府冬日自駕終極整合手冊 v70_mobile</span>
     </footer>
 
     <!-- JavaScript 交互與 LocalStorage 存取 -->
